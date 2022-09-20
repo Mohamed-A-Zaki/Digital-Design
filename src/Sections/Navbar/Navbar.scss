@@ -2,6 +2,9 @@
 @use "../../sass/animations" as *;
 
 .navbar {
+  // @media (max-width: 991px) {
+  //   background-color: #fff !important;
+  // }
   // navbar-brand
   .navbar-brand {
     -webkit-text-fill-color: #333;
@@ -32,36 +35,12 @@
     .dropdown-menu {
       transition: $main-transition;
       li {
-        width: 200px;
+        min-width: 200px;
       }
     }
     &:hover .dropdown-menu {
       display: block !important;
       animation: go-up 0.4s;
-    }
-  }
-
-  // button
-  a.btn {
-    background-color: $yellow-color;
-    z-index: 1;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      transform: translateY(-50%);
-      height: 0;
-      background-color: #fff;
-      z-index: -1;
-      transition: $main-transition;
-    }
-    &:hover {
-      color: $yellow-color !important;
-      &::after {
-        height: 100%;
-      }
     }
   }
 }

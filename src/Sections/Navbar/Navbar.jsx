@@ -1,13 +1,15 @@
 import "./Navbar.scss";
 
 import React from "react";
+import MainButton from "../../Components/MainButton/MainButton";
+
 import { FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark navbar-expand-lg py-3 sticky-top">
-      <div className="container">
+      <div className="container-fluid px-2 px-md-4 px-lg-5">
         {/* navbar-brand */}
         <Link
           className="navbar-brand fw-bold fs-2 p-0 position-relative"
@@ -54,7 +56,7 @@ const Navbar = () => {
               {/* nav-item */}
               <li className="nav-item">
                 <NavLink
-                  className="nav-link fw-semibold px-0 text-white "
+                  className="nav-link fw-semibold px-0 text-white"
                   aria-current="page"
                   to="home"
                 >
@@ -170,11 +172,8 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-
             {/* button */}
-            <Link className="btn px-4 d-none d-lg-block text-white fw-bold position-relative overflow-hidden">
-              Get Started
-            </Link>
+            <MainButton text="Get Started" />
           </div>
         </div>
         {/* end offcanvas */}
