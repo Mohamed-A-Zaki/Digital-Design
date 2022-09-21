@@ -1,6 +1,0 @@
-@use "../../sass/variabled" as *;
-@use "../../sass/mixin" as *;
-
-.main-btn.btn {
-  @include button($yellow-color, #fff, "color");
-}

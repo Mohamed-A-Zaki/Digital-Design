@@ -2,12 +2,10 @@
 @use "../../sass/animations" as *;
 
 .navbar {
-  // @media (max-width: 991px) {
-  //   background-color: #fff !important;
-  // }
+  transition: $main-transition * 3;
   // navbar-brand
   .navbar-brand {
-    -webkit-text-fill-color: #333;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px $yellow-color;
     &::before {
       content: attr(custom-data);

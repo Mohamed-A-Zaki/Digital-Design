@@ -1,6 +1,0 @@
-@use "../../sass/variabled" as *;
-@use "../../sass/mixin" as *;
-
-.secondary-btn.btn {
-  @include button(transparent, $yellow-color, "border");
-}

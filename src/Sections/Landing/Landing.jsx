@@ -1,16 +1,16 @@
 import "./Landing.scss";
 
 import React from "react";
-import SecondaryButton from "../../Components/SecondaryButton/SecondaryButton";
 
 import banner from "../../images/banner-man.png";
 import chart from "../../images/chart.svg";
 import client from "../../images/client-satisfaction.svg";
 import experience from "../../images/experience.svg";
+import ButtonComp from "../../Components/Button/ButtonComp";
 
 const Landing = () => {
   return (
-    <div className="landing bg-dark pb-5">
+    <div className="landing bg-dark pb-5 pt-3">
       <div className="container-fluid px-2 px-md-4 px-lg-5 w-auto">
         <div className="row  border border-2 flex-column-reverse flex-lg-row align-items-center text-center text-lg-start m-0">
           <div className="col">
@@ -47,7 +47,11 @@ const Landing = () => {
                 Various versions have evolved over the years, sometimes by
                 accident, sometimes on purpose
               </p>
-              <SecondaryButton text="Contact Us Now" />
+              {/* <SecondaryButton text="Contact Us Now" /> */}
+              <ButtonComp
+                text="Contact Us Now"
+                className="secondary-btn"
+              ></ButtonComp>
             </div>
           </div>
         </div>

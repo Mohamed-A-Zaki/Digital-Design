@@ -1,14 +1,30 @@
 import "./Navbar.scss";
 
-import React from "react";
-import MainButton from "../../Components/MainButton/MainButton";
+import React, { useEffect, useState } from "react";
 
 import { FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import ButtonComp from "../../Components/Button/ButtonComp";
 
 const Navbar = () => {
+  const [navbar_theme, setNavbar_theme] = useState("dark");
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 100) {
+        setNavbar_theme("light");
+      } else {
+        setNavbar_theme("dark");
+      }
+    });
+  }, []);
+
   return (
-    <nav className="navbar navbar-dark bg-dark navbar-expand-lg py-3 sticky-top">
+    <nav
+      className={`navbar ${
+        navbar_theme === "dark" ? "navbar-dark bg-dark" : "bg-white"
+      } navbar-expand-lg py-3 sticky-top`}
+    >
       <div className="container-fluid px-2 px-md-4 px-lg-5">
         {/* navbar-brand */}
         <Link
@@ -21,18 +37,26 @@ const Navbar = () => {
 
         {/* navbar-toggler button */}
         <button
-          className="navbar-toggler shadow-none border-light"
+          className={`navbar-toggler shadow-none ${
+            navbar_theme === "dark" ? "border-light" : "border-dark"
+          }`}
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar"
         >
-          <FaBars className="fs-3 text-light" />
+          <FaBars
+            className={`fs-3 ${
+              navbar_theme === "dark" ? "text-light" : "text-dark"
+            } `}
+          />
         </button>
 
         {/* start offcanvas */}
         <div
-          className="offcanvas offcanvas-end text-bg-dark"
+          className={`offcanvas offcanvas-end ${
+            navbar_theme === "dark" ? "text-bg-dark" : ""
+          }`}
           tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
@@ -56,7 +80,9 @@ const Navbar = () => {
               {/* nav-item */}
               <li className="nav-item">
                 <NavLink
-                  className="nav-link fw-semibold px-0 text-white"
+                  className={`nav-link fw-semibold px-0 ${
+                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                  }`}
                   aria-current="page"
                   to="home"
                 >
@@ -66,7 +92,9 @@ const Navbar = () => {
               {/* nav-item */}
               <li className="nav-item">
                 <NavLink
-                  className="nav-link fw-semibold px-0 text-white "
+                  className={`nav-link fw-semibold px-0 ${
+                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                  }`}
                   aria-current="page"
                   to="about"
                 >
@@ -76,7 +104,9 @@ const Navbar = () => {
               {/* nav-item */}
               <li className="nav-item">
                 <NavLink
-                  className="nav-link fw-semibold px-0 text-white "
+                  className={`nav-link fw-semibold px-0 ${
+                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                  }`}
                   aria-current="page"
                   to="services"
                 >
@@ -86,7 +116,9 @@ const Navbar = () => {
               {/* nav-item */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link fw-semibold px-0 text-white  dropdown-toggle"
+                  className={`nav-link fw-semibold px-0 dropdown-toggle ${
+                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                  }`}
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -134,7 +166,9 @@ const Navbar = () => {
               {/* nav-item */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link fw-semibold px-0 text-white  dropdown-toggle"
+                  className={`nav-link fw-semibold px-0 dropdown-toggle ${
+                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                  }`}
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -164,7 +198,9 @@ const Navbar = () => {
               {/* nav-item */}
               <li className="nav-item ">
                 <NavLink
-                  className="nav-link fw-semibold px-0 text-white "
+                  className={`nav-link fw-semibold px-0 ${
+                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                  }`}
                   aria-current="page"
                   to="contact"
                 >
@@ -172,8 +208,14 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
+
             {/* button */}
-            <MainButton text="Get Started" />
+            <ButtonComp
+              text="Get Started"
+              className={`${
+                navbar_theme === "dark" ? "nav-btn" : "main-btn"
+              } d-none d-lg-block`}
+            ></ButtonComp>
           </div>
         </div>
         {/* end offcanvas */}
