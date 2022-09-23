@@ -1,0 +1,5 @@
+@use "./variabled" as *;
+
+.outline {
+  border: 2px solid $yellow-color;
+}

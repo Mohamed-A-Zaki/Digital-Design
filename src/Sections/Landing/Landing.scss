@@ -2,25 +2,22 @@
 @use "../../sass/animations" as *;
 
 .landing {
-  .row {
-    border-color: $yellow-color !important;
-    @media (max-width: 991px) {
-      // border: none !important;
-    }
-  }
   .image {
     width: fit-content;
     .banner {
-      top: 48px;
+      top: 50px;
+    }
+    img:not(:first-of-type) {
+      animation: img-animation 4s linear infinite alternate;
     }
     img:nth-of-type(2) {
-      animation: img-animation 4s 0s linear infinite alternate;
+      animation-delay: 0s;
     }
     img:nth-of-type(3) {
-      animation: img-animation 4s 0.5s linear infinite alternate;
+      animation-delay: 0.5s;
     }
     img:nth-of-type(4) {
-      animation: img-animation 4s 1s linear infinite alternate;
+      animation-delay: 1s;
     }
   }
   .content {
