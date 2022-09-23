@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav
       className={`navbar ${
         navbar_theme === "dark" ? "navbar-dark bg-dark" : "bg-white"
-      } navbar-expand-lg py-3 sticky-top`}
+      } navbar-expand-lg py-3 sticky-top shadow`}
     >
       <div className="container-fluid px-2 px-md-4 px-lg-5">
         {/* navbar-brand */}

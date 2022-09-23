@@ -47,7 +47,6 @@ const Landing = () => {
                 Various versions have evolved over the years, sometimes by
                 accident, sometimes on purpose
               </p>
-              {/* <SecondaryButton text="Contact Us Now" /> */}
               <ButtonComp
                 text="Contact Us Now"
                 className="secondary-btn"

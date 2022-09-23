@@ -13,10 +13,8 @@
     z-index: -1;
     transition: $main-transition;
   }
-  &:hover {
-    &::after {
-      height: 100%;
-    }
+  &:hover::after {
+    height: 100%;
   }
 
   &.main-btn {
@@ -37,7 +35,7 @@
   }
 
   &.secondary-btn {
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     &:hover {
       border-color: $yellow-color !important;
     }
