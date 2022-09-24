@@ -1,0 +1,37 @@
+@use "../../sass/variabled" as *;
+
+.main-heading {
+  color: $yellow-color;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $yellow-color;
+    transform: translateX(-50%);
+  }
+  &::after {
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+  }
+  &::before {
+    bottom: -7px;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    z-index: 2;
+  }
+  &.special {
+    &::after {
+      left: 0;
+      width: 40px;
+      transform: translateX(0);
+    }
+    &::before {
+      left: 4px;
+    }
+  }
+}

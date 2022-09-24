@@ -25,7 +25,7 @@ const Navbar = () => {
         navbar_theme === "dark" ? "navbar-dark bg-dark" : "bg-white"
       } navbar-expand-lg py-3 sticky-top shadow`}
     >
-      <div className="container-fluid px-2 px-md-4 px-lg-5">
+      <div className="container-fluid px-md-4 px-lg-5">
         {/* navbar-brand */}
         <Link
           className="navbar-brand fw-bold fs-2 p-0 position-relative"
@@ -68,7 +68,9 @@ const Navbar = () => {
             </h5>
             <button
               type="button"
-              className="btn-close btn-close-white"
+              className={`btn-close ${
+                navbar_theme === "dark" && "btn-close-white"
+              }`}
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>

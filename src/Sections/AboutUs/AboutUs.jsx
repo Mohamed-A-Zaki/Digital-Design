@@ -7,6 +7,7 @@ import { BsFillTriangleFill } from "react-icons/bs";
 
 import about from "../../images/about-img.jpg";
 import video from "../../images/banner-video.mp4";
+import MainHeading from "../../Components/MainHeading/MainHeading";
 
 const AboutUs = () => {
   return (
@@ -15,10 +16,8 @@ const AboutUs = () => {
         <div className="row row-cols-1 row-cols-lg-2 g-4">
           <div className="col">
             <div className="box">
-              <span className="title text-uppercase fw-bold fs-5 pb-3 mb-2 d-block position-relative">
-                About Us
-              </span>
-              <h2 className="h1 fw-bold mb-0">
+              <MainHeading className="special" text="About Us"></MainHeading>
+              <h2 className="h1 fw-bold mb-0 mt-4">
                 We're More Than Digital Agency
               </h2>
               <div className="text text-muted my-4">

@@ -1,0 +1,81 @@
+@use "../../sass/variabled" as *;
+
+footer {
+  .main-heading::before {
+    border-color: #212529;
+  }
+  .input-div {
+    @media (max-width: 991px) {
+      width: 100% !important;
+    }
+    input {
+      &::placeholder {
+        transition: $main-transition;
+      }
+      &:focus::placeholder {
+        opacity: 0;
+      }
+    }
+    .main-btn {
+      @media (max-width: 1199px) {
+        position: static !important;
+        transform: translate(0) !important;
+      }
+    }
+  }
+
+  .box {
+    svg {
+      color: $yellow-color;
+    }
+    .item {
+      transition: $main-transition;
+      cursor: pointer;
+      &:hover {
+        color: $yellow-color;
+      }
+    }
+    a {
+      transition: $main-transition;
+      &:hover {
+        color: $yellow-color !important;
+      }
+      svg {
+        width: 40px;
+        height: 40px;
+        background-color: #5d5f65;
+        transition: $main-transition;
+        &:hover {
+          color: #fff;
+          background-color: $yellow-color;
+          transform: rotate(360deg) scale(1.1);
+        }
+      }
+    }
+  }
+
+  .copy-right {
+    span {
+      color: $yellow-color;
+      cursor: pointer;
+    }
+    .links {
+      div {
+        cursor: pointer;
+        transition: $main-transition;
+        &:not(:last-child):after {
+          content: "";
+          position: absolute;
+          top: 4px;
+          right: -0.75rem;
+          bottom: 4px;
+          width: 1px;
+          background-color: #fff;
+        }
+        &:hover {
+          color: $yellow-color;
+        }
+      }
+    }
+  }
+}

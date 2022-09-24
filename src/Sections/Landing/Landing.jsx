@@ -11,7 +11,7 @@ import ButtonComp from "../../Components/Button/ButtonComp";
 const Landing = () => {
   return (
     <div className="landing bg-dark pb-5 pt-3">
-      <div className="container-fluid px-2 px-md-4 px-lg-5 w-auto">
+      <div className="container-fluid px-md-4 px-lg-5 w-auto">
         <div className="outline rounded">
           <div className="row flex-column-reverse flex-lg-row align-items-center text-center text-lg-start">
             <div className="col">
