@@ -39,12 +39,13 @@ const Landing = () => {
               </div>
             </div>
             <div className="col p-4 pb-0">
-              <div className="content">
+              <div className="content m-auto mw-100">
                 <span className="text-uppercase fw-bold">Welcome</span>
                 <h1 className="text-white display-4 fw-bold">
                   Groww Your Business With Us
                 </h1>
-                <p className="fw-bold my-3">
+                <p className="fw-bold my-3 lh-lg
+                ">
                   Various versions have evolved over the years, sometimes by
                   accident, sometimes on purpose
                 </p>
