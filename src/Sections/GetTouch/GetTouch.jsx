@@ -1,20 +1,22 @@
 import React from "react";
 import ButtonComp from "../../Components/Button/ButtonComp";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 import image from "../../images/get-in-touch.png";
 
 const GetTouch = () => {
   return (
-    <div className="get-in-touch py-5 bg-light position-relative text-center text-lg-start">
+    <section className="get-in-touch py-5 bg-light position-relative text-center text-lg-start">
       <div className="container-fluid px-2 px-md-4 px-lg-5">
         <div className="outline rounded">
           <div className="container">
             <div className="row py-5">
               <div className="col">
                 <div className="box">
-                  <h2 className="display-5 fw-bold mb-5">
-                    Have A Project In Mind? Let's Get To Work.
-                  </h2>
+                  <SectionHeading
+                    text="Have A Project In Mind? Let's Get To Work."
+                    className="display-5 mb-5"
+                  />
                   <ButtonComp
                     text="Read More"
                     className="main-btn px-5 py-2"
@@ -35,7 +37,7 @@ const GetTouch = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

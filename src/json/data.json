@@ -42,5 +42,27 @@
       "img": "images/social-media.svg",
       "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
     }
+  ],
+  "statistics": [
+    {
+      "id": 1,
+      "count": "120+",
+      "text": "Complete Projects"
+    },
+    {
+      "id": 2,
+      "count": "100+",
+      "text": "Happy Clients"
+    },
+    {
+      "id": 3,
+      "count": "93+",
+      "text": "Cup Of Tea"
+    },
+    {
+      "id": 4,
+      "count": "137+",
+      "text": "Skill Services"
+    }
   ]
 }

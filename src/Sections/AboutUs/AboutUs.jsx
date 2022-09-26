@@ -12,7 +12,7 @@ import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 const AboutUs = () => {
   return (
-    <div className="about-us py-5 my-lg-5">
+    <section className="about-us py-5 my-lg-5">
       <div className="container py-lg-5 ">
         <div className="row row-cols-1 row-cols-lg-2 g-4">
           <div className="col">
@@ -92,7 +92,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

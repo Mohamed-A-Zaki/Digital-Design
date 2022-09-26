@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import "./Services.scss";
 import data from "../../json/data.json";
 
-import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import MainHeading from "../../Components/MainHeading/MainHeading";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 const Services = () => {
   return (
-    <div className="services py-5">
+    <section className="services py-5">
       <div className="container pb-5">
         <div className="heading text-center m-auto mw-100">
           <MainHeading text="Services"></MainHeading>
@@ -32,7 +32,7 @@ const Services = () => {
                   />
                   <div className="outline rounded p-3">
                     <div className="number fw-bold fs-1">{number}</div>
-                    <h3 className="fw-bold">{name}</h3>
+                    <h3 className="fw-bold text-truncate">{name}</h3>
                     <p className="my-3 text-black-50">{description}</p>
                     <Link to="#">Read More</Link>
                   </div>
@@ -42,7 +42,7 @@ const Services = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
