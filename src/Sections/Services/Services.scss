@@ -1,0 +1,38 @@
+@use "../../sass/variabled" as *;
+
+.services {
+  .heading {
+    width: 700px;
+  }
+  .item {
+    transition: $main-transition;
+    .outline {
+      border-color: transparent !important;
+    }
+    .number {
+      -webkit-text-stroke: 1px $yellow-color;
+      -webkit-text-fill-color: #fff;
+      transition: $main-transition * 2;
+    }
+    a {
+      color: $yellow-color;
+      transition: $main-transition * 2;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &:hover {
+      background-color: #333;
+      color: #fff;
+      .outline {
+        border-color: $yellow-color !important;
+      }
+      .number {
+        -webkit-text-fill-color: $yellow-color;
+      }
+      p {
+        color: #fff !important;
+      }
+    }
+  }
+}

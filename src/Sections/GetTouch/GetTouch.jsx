@@ -12,9 +12,9 @@ const GetTouch = () => {
             <div className="row py-5">
               <div className="col">
                 <div className="box">
-                  <h3 className="display-5 fw-bold mb-5">
+                  <h2 className="display-5 fw-bold mb-5">
                     Have A Project In Mind? Let's Get To Work.
-                  </h3>
+                  </h2>
                   <ButtonComp
                     text="Read More"
                     className="main-btn px-5 py-2"

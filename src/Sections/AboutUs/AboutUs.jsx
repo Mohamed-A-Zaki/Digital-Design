@@ -8,6 +8,7 @@ import { BsFillTriangleFill } from "react-icons/bs";
 import about from "../../images/about-img.jpg";
 import video from "../../images/banner-video.mp4";
 import MainHeading from "../../Components/MainHeading/MainHeading";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 const AboutUs = () => {
   return (
@@ -17,9 +18,7 @@ const AboutUs = () => {
           <div className="col">
             <div className="box">
               <MainHeading className="special" text="About Us"></MainHeading>
-              <h2 className="h1 fw-bold mb-0 mt-4">
-                We're More Than Digital Agency
-              </h2>
+              <SectionHeading text="We're More Than Digital Agency"></SectionHeading>
               <div className="text text-muted my-4">
                 <div>
                   It is a long established fact that a reader will be distracted

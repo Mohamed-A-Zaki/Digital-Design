@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "number": "01",
+      "name": "Graphic Design",
+      "img": "images/graphic-design.svg",
+      "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
+    },
+    {
+      "id": 2,
+      "number": "02",
+      "name": "Web Design",
+      "img": "images/web-design.svg",
+      "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
+    },
+    {
+      "id": 3,
+      "number": "03",
+      "name": "Web Development",
+      "img": "images/web-development.svg",
+      "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
+    },
+    {
+      "id": 4,
+      "number": "04",
+      "name": "UI / UX Design",
+      "img": "images/ui-ux-design.svg",
+      "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
+    },
+    {
+      "id": 5,
+      "number": "05",
+      "name": "Creative Ideas",
+      "img": "images/creative-ideas.svg",
+      "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
+    },
+    {
+      "id": 6,
+      "number": "06",
+      "name": "Social Media Marketing",
+      "img": "images/social-media.svg",
+      "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
+    }
+  ]
+}
