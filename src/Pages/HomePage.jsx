@@ -4,6 +4,7 @@ import GetTouch from "../Sections/GetTouch/GetTouch";
 import Landing from "../Sections/Landing/Landing";
 import Services from "../Sections/Services/Services";
 import WhyUs from "../Sections/WhyUs/WhyUs";
+import Blog from "./../Sections/Blog/Blog";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Services />
       <GetTouch />
       <WhyUs />
+      <Blog></Blog>
     </div>
   );
 };

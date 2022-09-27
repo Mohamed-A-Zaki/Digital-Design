@@ -7,7 +7,7 @@
   .item {
     transition: $main-transition;
     .outline {
-      border-color: transparent !important;
+      border-color: transparent;
     }
     .number {
       -webkit-text-stroke: 1px $yellow-color;
@@ -25,7 +25,7 @@
       background-color: #333;
       color: #fff;
       .outline {
-        border-color: $yellow-color !important;
+        border-color: $yellow-color;
       }
       .number {
         -webkit-text-fill-color: $yellow-color;
