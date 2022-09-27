@@ -1,12 +1,12 @@
 import "./Landing.scss";
 
 import React from "react";
+import ButtonComp from "../../Components/Button/ButtonComp";
 
 import banner from "../../images/banner-man.png";
 import chart from "../../images/chart.svg";
 import client from "../../images/client-satisfaction.svg";
 import experience from "../../images/experience.svg";
-import ButtonComp from "../../Components/Button/ButtonComp";
 
 const Landing = () => {
   return (
@@ -44,15 +44,13 @@ const Landing = () => {
                 <h1 className="text-white display-4 fw-bold">
                   Groww Your Business With Us
                 </h1>
-                <p className="fw-bold my-3 lh-lg
-                ">
+                <p className="fw-bold my-3 lh-lg">
                   Various versions have evolved over the years, sometimes by
                   accident, sometimes on purpose
                 </p>
-                <ButtonComp
-                  text="Contact Us Now"
-                  className="secondary-btn"
-                ></ButtonComp>
+                <ButtonComp className="secondary-btn">
+                  Contact Us Now
+                </ButtonComp>
               </div>
             </div>
           </div>

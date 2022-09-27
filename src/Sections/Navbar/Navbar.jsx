@@ -214,11 +214,12 @@ const Navbar = () => {
 
             {/* button */}
             <ButtonComp
-              text="Get Started"
               className={`${
                 navbar_theme === "dark" ? "nav-btn" : "main-btn"
               } d-none d-lg-block`}
-            ></ButtonComp>
+            >
+              Get Started
+            </ButtonComp>
           </div>
         </div>
         {/* end offcanvas */}

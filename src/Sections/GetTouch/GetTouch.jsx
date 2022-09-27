@@ -17,10 +17,9 @@ const GetTouch = () => {
                     text="Have A Project In Mind? Let's Get To Work."
                     className="display-5 mb-5"
                   />
-                  <ButtonComp
-                    text="Read More"
-                    className="main-btn px-5 py-2"
-                  ></ButtonComp>
+                  <ButtonComp className="main-btn px-5 py-2">
+                    Read More
+                  </ButtonComp>
                 </div>
               </div>
               <div className="col d-none d-lg-flex">

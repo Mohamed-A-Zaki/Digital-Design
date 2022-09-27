@@ -38,10 +38,7 @@ const AboutUs = () => {
                   purpose.
                 </div>
               </div>
-              <ButtonComp
-                text="Read More"
-                className="main-btn px-5 py-2"
-              ></ButtonComp>
+              <ButtonComp className="main-btn px-5 py-2">Read More</ButtonComp>
             </div>
           </div>
 

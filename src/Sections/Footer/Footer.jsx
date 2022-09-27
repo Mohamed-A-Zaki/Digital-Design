@@ -23,13 +23,16 @@ const Footer = () => {
                 <input
                   type="email"
                   name="email"
+                  aria-label="form-email"
                   placeholder="Enter Email Address..."
                   className="form-control p-3 border-0 shadow-none"
                 />
                 <ButtonComp
-                  text="Subscribe Now"
+                  type="submit"
                   className="main-btn position-absolute end-0 top-50 translate-middle-y me-3 mt-3 mt-xl-0"
-                ></ButtonComp>
+                >
+                  Subscribe Now
+                </ButtonComp>
               </div>
             </form>
             {/* end form */}
