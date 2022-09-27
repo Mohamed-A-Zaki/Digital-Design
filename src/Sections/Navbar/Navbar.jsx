@@ -41,6 +41,7 @@ const Navbar = () => {
             navbar_theme === "dark" ? "border-light" : "border-dark"
           }`}
           type="button"
+          aria-label="navbar-toggler"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar"

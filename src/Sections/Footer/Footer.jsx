@@ -18,7 +18,7 @@ const Footer = () => {
             {/* start form */}
             <form className="text-center">
               <MainHeading text="Newsletter"></MainHeading>
-              <h4 className="h1 my-4">Let's Stay In Touch</h4>
+              <h2 className="h1 my-4">Let's Stay In Touch</h2>
               <div className="input-div position-relative w-50 m-auto">
                 <input
                   type="email"
@@ -39,7 +39,7 @@ const Footer = () => {
               {/* row-cols-1 row-cols-md-2 row-cols-lg-4 */}
               <div className="col-md-6 col-xl-3">
                 <div className="box">
-                  <h5 className="h1 mb-4">Digital Design</h5>
+                  <h3 className="h1 mb-4">Digital Design</h3>
                   <div className="item my-3 d-flex gap-2">
                     <MdPhone className="fs-3 d-block" />
                     <span>+123 4567 890</span>
@@ -190,17 +190,17 @@ const Footer = () => {
                   </p>
                   <ul className="list-unstyled list-inline">
                     <li className="list-inline-item">
-                      <Link to="/">
+                      <Link to="/" aria-label="facebook-link">
                         <FaFacebookF className="rounded-circle p-2" />
                       </Link>
                     </li>
                     <li className="list-inline-item">
-                      <Link to="/">
+                      <Link to="/" aria-label="instagram-link">
                         <FaInstagram className="rounded-circle p-2" />
                       </Link>
                     </li>
                     <li className="list-inline-item">
-                      <Link to="/">
+                      <Link to="/" aria-label="twitter-link">
                         <FaTwitter className="rounded-circle p-2" />
                       </Link>
                     </li>

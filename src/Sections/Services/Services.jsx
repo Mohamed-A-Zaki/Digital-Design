@@ -14,7 +14,7 @@ const Services = () => {
         <div className="heading text-center m-auto mw-100">
           <MainHeading text="Services"></MainHeading>
           <SectionHeading text="What Can We Do For You"></SectionHeading>
-          <p className="text-black-50 ">
+          <p className="text-muted">
             It is the dolor sit amet, consectetur adipiscing elit. Sed quis
             accumsan nisi Ut ut felis congue nisl hendrerit commodo.
           </p>
@@ -33,7 +33,7 @@ const Services = () => {
                   <div className="outline rounded p-3">
                     <div className="number fw-bold fs-1">{number}</div>
                     <h3 className="fw-bold text-truncate">{name}</h3>
-                    <p className="my-3 text-black-50">{description}</p>
+                    <p className="my-3 text-muted">{description}</p>
                     <Link to="#">Read More</Link>
                   </div>
                 </div>
