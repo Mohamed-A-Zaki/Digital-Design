@@ -34,4 +34,7 @@
       left: 4px;
     }
   }
+  &.dark-border::before {
+    border-color: $bootstrap-dark-color;
+  }
 }

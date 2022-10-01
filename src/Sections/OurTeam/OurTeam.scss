@@ -1,0 +1,61 @@
+@use "../../sass/variabled" as *;
+
+.our-team {
+  .main-heading::before {
+    // border-color: $bootstrap-dark-color;
+  }
+  .swiper {
+    user-select: none;
+    .swiper-wrapper {
+      padding-bottom: 4.5rem;
+      .swiper-slide {
+        .outline {
+          top: 5rem;
+          z-index: -1;
+        }
+        img {
+          object-fit: cover;
+          height: 280px;
+        }
+        .data {
+          background-color: $dark-color;
+          .job {
+            color: $yellow-color;
+          }
+        }
+        .social-wrapper {
+          transition: $main-transition;
+        }
+        &:hover .social-wrapper {
+          opacity: 1 !important;
+        }
+      }
+    }
+    .swiper-pagination {
+      bottom: 0;
+      .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fff;
+        border-radius: 0;
+        background-color: transparent;
+        cursor: pointer;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $yellow-color;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border: inherit;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

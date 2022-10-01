@@ -30,8 +30,8 @@ const WhyUs = () => {
 
           <div className="col">
             <div className="box">
-              <MainHeading text="Why Choose Us" className="special" />
-              <SectionHeading text="Boost Your Website Traffic" />
+              <MainHeading className="special">Why Choose Us</MainHeading>
+              <SectionHeading>Boost Your Website Traffic</SectionHeading>
               <p className="mt-4 mb-0 text-muted">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.

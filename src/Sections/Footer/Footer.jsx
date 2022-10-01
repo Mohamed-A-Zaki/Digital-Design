@@ -8,6 +8,8 @@ import { MdPhone, MdEmail, MdLocationPin } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
+import SectionHeading from "./../../Components/SectionHeading/SectionHeading";
+import SocialMedia from "../../Components/SocialMedia/SocialMedia";
 
 const Footer = () => {
   return (
@@ -17,8 +19,8 @@ const Footer = () => {
           <div className="container py-5">
             {/* start form */}
             <form className="text-center">
-              <MainHeading text="Newsletter"></MainHeading>
-              <h2 className="h1 my-4">Let's Stay In Touch</h2>
+              <MainHeading className="dark-border">Newsletter</MainHeading>
+              <SectionHeading>Let's Stay In Touch</SectionHeading>
               <div className="input-div position-relative w-50 m-auto">
                 <input
                   type="email"
@@ -60,10 +62,7 @@ const Footer = () => {
 
               <div className="col-md-6 col-xl-3">
                 <div className="box">
-                  <MainHeading
-                    className="special"
-                    text="Our Links"
-                  ></MainHeading>
+                  <MainHeading className="special dark-border">Our Links</MainHeading>
                   <div className="d-flex gap-5 my-3">
                     <ul className="list-unstyled mb-0">
                       <li className="my-3">
@@ -140,10 +139,7 @@ const Footer = () => {
 
               <div className="col-md-6 col-xl-2">
                 <div className="box">
-                  <MainHeading
-                    className="special"
-                    text="Our Services"
-                  ></MainHeading>
+                  <MainHeading className="special dark-border">Our Services</MainHeading>
                   <ul className="list-unstyled mb-0 my-3">
                     <li className="my-3">
                       <Link to="/" className="text-decoration-none link-light">
@@ -181,33 +177,14 @@ const Footer = () => {
 
               <div className="col-md-6 col-xl-4">
                 <div className="box">
-                  <MainHeading
-                    className="special"
-                    text="About Us"
-                  ></MainHeading>
+                  <MainHeading className="special dark-border">About Us</MainHeading>
                   <p className="my-4">
                     That is the simply dummy text of the printing and
                     typesetting industry. It is a long established fact that a
                     reader will be distracted by the readable content of a page
                     when looking at its layout.
                   </p>
-                  <ul className="list-unstyled list-inline">
-                    <li className="list-inline-item">
-                      <Link to="/" aria-label="facebook-link">
-                        <FaFacebookF className="rounded-circle p-2" />
-                      </Link>
-                    </li>
-                    <li className="list-inline-item">
-                      <Link to="/" aria-label="instagram-link">
-                        <FaInstagram className="rounded-circle p-2" />
-                      </Link>
-                    </li>
-                    <li className="list-inline-item">
-                      <Link to="/" aria-label="twitter-link">
-                        <FaTwitter className="rounded-circle p-2" />
-                      </Link>
-                    </li>
-                  </ul>
+                  <SocialMedia></SocialMedia>
                 </div>
               </div>
             </div>

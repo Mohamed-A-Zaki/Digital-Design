@@ -1,0 +1,13 @@
+@use "../../sass/variabled" as *;
+
+.social svg {
+  width: 40px;
+  height: 40px;
+  background-color: $dark-color;
+  transition: $main-transition;
+  &:hover {
+    color: #fff !important;
+    background-color: $yellow-color;
+    transform: rotate(360deg) scale(1.1);
+  }
+}

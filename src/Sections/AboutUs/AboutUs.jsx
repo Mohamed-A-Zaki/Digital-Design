@@ -17,8 +17,8 @@ const AboutUs = () => {
         <div className="row row-cols-1 row-cols-lg-2 g-4">
           <div className="col">
             <div className="box">
-              <MainHeading className="special" text="About Us"></MainHeading>
-              <SectionHeading text="We're More Than Digital Agency"></SectionHeading>
+              <MainHeading className="special">About Us</MainHeading>
+              <SectionHeading>We're More Than Digital Agency</SectionHeading>
               <div className="text text-muted my-4">
                 <div>
                   It is a long established fact that a reader will be distracted

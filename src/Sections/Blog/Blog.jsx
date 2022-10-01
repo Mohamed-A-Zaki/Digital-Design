@@ -16,8 +16,8 @@ const Blog = () => {
     <div className="blog py-5">
       <div className="container">
         <div className="heading text-center mb-5">
-          <MainHeading text="Blog Posts"></MainHeading>
-          <SectionHeading text="Read Our Blog"></SectionHeading>
+          <MainHeading>Blog Posts</MainHeading>
+          <SectionHeading>Read Our Blog</SectionHeading>
         </div>
 
         <div className="row row-cols-1 row-cols-xl-2 text-white g-3">

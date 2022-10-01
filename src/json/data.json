@@ -64,5 +64,55 @@
       "count": "137+",
       "text": "Skill Services"
     }
+  ],
+  "our_team": [
+    {
+      "id": 1,
+      "name": "Paul Dawyne",
+      "job": "Web Designer",
+      "img": "images/team-img1.png"
+    },
+    {
+      "id": 2,
+      "name": "Smith Adarson",
+      "job": "Web Designer",
+      "img": "images/team-img2.png"
+    },
+    {
+      "id": 3,
+      "name": "Janny Stark",
+      "job": "Web Designer",
+      "img": "images/team-img3.png"
+    },
+    {
+      "id": 4,
+      "name": "Tony Johnson",
+      "job": "Web Designer",
+      "img": "images/team-img4.png"
+    },
+    {
+      "id": 5,
+      "name": "Natasha Dom",
+      "job": "Web Designer",
+      "img": "images/team-img5.png"
+    },
+    {
+      "id": 6,
+      "name": "Dariya Smith",
+      "job": "Web Designer",
+      "img": "images/team-img6.png"
+    },
+    {
+      "id": 7,
+      "name": "Dariya Smith",
+      "job": "Web Designer",
+      "img": "images/team-img7.png"
+    },
+    {
+      "id": 8,
+      "name": "Nikki Johnson",
+      "job": "Web Designer",
+      "img": "images/team-img8.png"
+    }
   ]
 }

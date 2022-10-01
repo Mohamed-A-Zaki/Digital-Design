@@ -2,9 +2,10 @@ import React from "react";
 import AboutUs from "../Sections/AboutUs/AboutUs";
 import GetTouch from "../Sections/GetTouch/GetTouch";
 import Landing from "../Sections/Landing/Landing";
+import OurTeam from "../Sections/OurTeam/OurTeam";
 import Services from "../Sections/Services/Services";
 import WhyUs from "../Sections/WhyUs/WhyUs";
-import Blog from "./../Sections/Blog/Blog";
+import Blog from "../Sections/Blog/Blog";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Services />
       <GetTouch />
       <WhyUs />
+      <OurTeam></OurTeam>
       <Blog></Blog>
     </div>
   );

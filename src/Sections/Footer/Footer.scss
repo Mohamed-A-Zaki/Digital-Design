@@ -2,7 +2,7 @@
 
 footer {
   .main-heading::before {
-    border-color: #212529;
+    // border-color: $bootstrap-dark-color;
   }
   .input-div {
     @media (max-width: 991px) {
@@ -26,7 +26,7 @@ footer {
 
   .box {
     svg {
-      color: $yellow-color;
+      color: $yellow-color !important;
     }
     .item {
       transition: $main-transition;
@@ -39,17 +39,6 @@ footer {
       transition: $main-transition;
       &:hover {
         color: $yellow-color !important;
-      }
-      svg {
-        width: 40px;
-        height: 40px;
-        background-color: #5d5f65;
-        transition: $main-transition;
-        &:hover {
-          color: #fff;
-          background-color: $yellow-color;
-          transform: rotate(360deg) scale(1.1);
-        }
       }
     }
   }

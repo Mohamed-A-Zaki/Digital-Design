@@ -7,18 +7,17 @@ import image from "../../images/get-in-touch.png";
 const GetTouch = () => {
   return (
     <section className="get-in-touch py-5 bg-light position-relative text-center text-lg-start">
-      <div className="container-fluid px-2 px-md-4 px-lg-5">
+      <div className="container-fluid px-md-4 px-lg-5">
         <div className="outline rounded">
           <div className="container">
             <div className="row py-5">
               <div className="col">
                 <div className="box">
-                  <SectionHeading
-                    text="Have A Project In Mind? Let's Get To Work."
-                    className="display-5 mb-5"
-                  />
+                  <SectionHeading className="display-5 mb-5">
+                    Have A Project In Mind? Let's Get To Work.
+                  </SectionHeading>
                   <ButtonComp className="main-btn px-5 py-2">
-                    Read More
+                    Get In Touch
                   </ButtonComp>
                 </div>
               </div>
