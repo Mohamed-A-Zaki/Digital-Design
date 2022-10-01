@@ -2,13 +2,13 @@ import "./AboutUs.scss";
 
 import React from "react";
 import ButtonComp from "../../Components/Button/ButtonComp";
-
-import { BsFillTriangleFill } from "react-icons/bs";
+import MainHeading from "../../Components/MainHeading/MainHeading";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 import about from "../../images/about-img.jpg";
 import video from "../../images/banner-video.mp4";
-import MainHeading from "../../Components/MainHeading/MainHeading";
-import SectionHeading from "../../Components/SectionHeading/SectionHeading";
+
+import { BsFillTriangleFill } from "react-icons/bs";
 
 const AboutUs = () => {
   return (

@@ -1,15 +1,13 @@
 import "./Footer.scss";
 
 import React from "react";
-import MainHeading from "./../../Components/MainHeading/MainHeading";
-import ButtonComp from "./../../Components/Button/ButtonComp";
-
-import { MdPhone, MdEmail, MdLocationPin } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import ButtonComp from "../../Components/Button/ButtonComp";
+import MainHeading from "../../Components/MainHeading/MainHeading";
+import SocialMedia from "../../Components/SocialMedia/SocialMedia";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 import { Link } from "react-router-dom";
-import SectionHeading from "./../../Components/SectionHeading/SectionHeading";
-import SocialMedia from "../../Components/SocialMedia/SocialMedia";
+import { MdPhone, MdEmail, MdLocationPin } from "react-icons/md";
 
 const Footer = () => {
   return (

@@ -1,11 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 import "./Services.scss";
-import data from "../../json/data.json";
 
+import React from "react";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
+
+import { Link } from "react-router-dom";
+
+import data from "../../json/data.json";
 
 const Services = () => {
   return (

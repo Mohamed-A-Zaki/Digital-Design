@@ -1,10 +1,10 @@
 import "./Navbar.scss";
 
 import React, { useEffect, useState } from "react";
+import ButtonComp from "../../Components/Button/ButtonComp";
 
 import { FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
-import ButtonComp from "../../Components/Button/ButtonComp";
 
 const Navbar = () => {
   const [navbar_theme, setNavbar_theme] = useState("dark");

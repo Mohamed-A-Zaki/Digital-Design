@@ -1,7 +1,8 @@
-import React from "react";
 import "./WhyUs.scss";
+
+import React from "react";
 import MainHeading from "../../Components/MainHeading/MainHeading";
-import SectionHeading from "./../../Components/SectionHeading/SectionHeading";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 import data from "../../json/data.json";
 
