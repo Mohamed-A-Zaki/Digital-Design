@@ -18,6 +18,7 @@ const Brands = () => {
           modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={5}
+          loop={true}
           pagination={{ clickable: true }}
           autoplay={{
             delay: 2000,
@@ -42,41 +43,6 @@ const Brands = () => {
             },
           }}
         >
-          <SwiperSlide>
-            <img
-              src={converse}
-              className="d-block m-auto opacity-25"
-              alt="converse"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src={deloitte}
-              className="d-block m-auto opacity-25"
-              alt="deloitte"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src={rollei}
-              className="d-block m-auto opacity-25"
-              alt="rollei"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src={unison}
-              className="d-block m-auto opacity-25"
-              alt="unison"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src={friendly}
-              className="d-block m-auto opacity-25"
-              alt="friendly"
-            />
-          </SwiperSlide>
           <SwiperSlide>
             <img
               src={converse}
