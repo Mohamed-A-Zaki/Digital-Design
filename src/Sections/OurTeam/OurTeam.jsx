@@ -4,9 +4,10 @@ import React from "react";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SocialMedia from "../../Components/SocialMedia/SocialMedia";
+import Outline from "../../Components/Outline/Outline";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 import data from "../../json/data.json";
 
@@ -14,7 +15,7 @@ const OurTeam = () => {
   return (
     <section className="our-team bg-dark py-5">
       <div className="container-fluid px-md-4 px-lg-5 text-white">
-        <div className="outline rounded">
+        <Outline>
           <div className="container py-5">
             <div className="heading text-center">
               <MainHeading className="dark-border">Our Team</MainHeading>
@@ -24,10 +25,14 @@ const OurTeam = () => {
             </div>
 
             <Swiper
-              modules={[Pagination]}
+              modules={[Pagination, Autoplay]}
               spaceBetween={10}
               slidesPerView={1}
               pagination={{ clickable: true }}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
               breakpoints={{
                 768: {
                   slidesPerView: 2,
@@ -43,7 +48,7 @@ const OurTeam = () => {
                 return (
                   <SwiperSlide key={id}>
                     <div className="top position-relative mx-4">
-                      <div className="outline rounded-top border-bottom-0 position-absolute bottom-0 end-0 start-0"></div>
+                      <Outline className="rounded-0 rounded-top border-bottom-0 position-absolute bottom-0 end-0 start-0"></Outline>
                       <div className="image">
                         <img
                           src={img}
@@ -66,7 +71,7 @@ const OurTeam = () => {
               })}
             </Swiper>
           </div>
-        </div>
+        </Outline>
       </div>
     </section>
   );

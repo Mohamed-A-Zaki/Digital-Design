@@ -1,6 +1,7 @@
 import "./Landing.scss";
 
 import React from "react";
+import Outline from "../../Components/Outline/Outline";
 import ButtonComp from "../../Components/Button/ButtonComp";
 
 import banner from "../../images/banner-man.png";
@@ -12,7 +13,7 @@ const Landing = () => {
   return (
     <section className="landing bg-dark pb-5 pt-3">
       <div className="container-fluid px-md-4 px-lg-5 w-auto">
-        <div className="outline rounded">
+        <Outline>
           <div className="row flex-column-reverse flex-lg-row align-items-center text-center text-lg-start">
             <div className="col">
               <div className="image position-relative m-auto">
@@ -54,7 +55,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Outline>
       </div>
     </section>
   );

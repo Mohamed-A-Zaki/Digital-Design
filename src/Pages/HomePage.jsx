@@ -6,6 +6,7 @@ import OurTeam from "../Sections/OurTeam/OurTeam";
 import Services from "../Sections/Services/Services";
 import WhyUs from "../Sections/WhyUs/WhyUs";
 import Blog from "../Sections/Blog/Blog";
+import Brands from "../Sections/Brands/Brands";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <WhyUs />
       <OurTeam></OurTeam>
       <Blog></Blog>
+      <Brands></Brands>
     </div>
   );
 };

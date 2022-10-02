@@ -1,0 +1,14 @@
+@use "../../sass/variabled" as *;
+
+.brands {
+  user-select: none;
+  .swiper-wrapper {
+    align-items: center;
+  }
+  img {
+    transition: $main-transition;
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+}

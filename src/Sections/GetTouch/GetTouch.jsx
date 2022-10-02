@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonComp from "../../Components/Button/ButtonComp";
+import Outline from "../../Components/Outline/Outline";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 import image from "../../images/get-in-touch.png";
@@ -8,7 +9,7 @@ const GetTouch = () => {
   return (
     <section className="get-in-touch py-5 bg-light position-relative text-center text-lg-start">
       <div className="container-fluid px-md-4 px-lg-5">
-        <div className="outline rounded">
+        <Outline>
           <div className="container">
             <div className="row py-5">
               <div className="col">
@@ -33,7 +34,7 @@ const GetTouch = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Outline>
       </div>
     </section>
   );

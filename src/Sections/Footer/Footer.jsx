@@ -1,6 +1,7 @@
 import "./Footer.scss";
 
 import React from "react";
+import Outline from "../../Components/Outline/Outline";
 import ButtonComp from "../../Components/Button/ButtonComp";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SocialMedia from "../../Components/SocialMedia/SocialMedia";
@@ -13,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark pt-5 text-white">
       <div className="container-fluid px-md-4 px-lg-5">
-        <div className="outline rounded">
+        <Outline>
           <div className="container py-5">
             {/* start form */}
             <form className="text-center">
@@ -60,7 +61,9 @@ const Footer = () => {
 
               <div className="col-md-6 col-xl-3">
                 <div className="box">
-                  <MainHeading className="special dark-border">Our Links</MainHeading>
+                  <MainHeading className="special dark-border">
+                    Our Links
+                  </MainHeading>
                   <div className="d-flex gap-5 my-3">
                     <ul className="list-unstyled mb-0">
                       <li className="my-3">
@@ -137,7 +140,9 @@ const Footer = () => {
 
               <div className="col-md-6 col-xl-2">
                 <div className="box">
-                  <MainHeading className="special dark-border">Our Services</MainHeading>
+                  <MainHeading className="special dark-border">
+                    Our Services
+                  </MainHeading>
                   <ul className="list-unstyled mb-0 my-3">
                     <li className="my-3">
                       <Link to="/" className="text-decoration-none link-light">
@@ -175,7 +180,9 @@ const Footer = () => {
 
               <div className="col-md-6 col-xl-4">
                 <div className="box">
-                  <MainHeading className="special dark-border">About Us</MainHeading>
+                  <MainHeading className="special dark-border">
+                    About Us
+                  </MainHeading>
                   <p className="my-4">
                     That is the simply dummy text of the printing and
                     typesetting industry. It is a long established fact that a
@@ -188,7 +195,7 @@ const Footer = () => {
             </div>
             {/* end row */}
           </div>
-        </div>
+        </Outline>
       </div>
 
       <div className="container">

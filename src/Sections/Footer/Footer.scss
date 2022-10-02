@@ -1,9 +1,6 @@
 @use "../../sass/variabled" as *;
 
 footer {
-  .main-heading::before {
-    // border-color: $bootstrap-dark-color;
-  }
   .input-div {
     @media (max-width: 991px) {
       width: 100% !important;

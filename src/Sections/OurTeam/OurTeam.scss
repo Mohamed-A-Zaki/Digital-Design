@@ -1,9 +1,6 @@
 @use "../../sass/variabled" as *;
 
 .our-team {
-  .main-heading::before {
-    // border-color: $bootstrap-dark-color;
-  }
   .swiper {
     user-select: none;
     .swiper-wrapper {

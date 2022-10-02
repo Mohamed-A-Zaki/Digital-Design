@@ -1,6 +1,7 @@
 import "./Blog.scss";
 
 import React from "react";
+import Outline from "../../Components/Outline/Outline";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
@@ -28,7 +29,7 @@ const Blog = () => {
                   className="box p-2 rounded overflow-hidden position-relative"
                   style={{ backgroundImage: `url(${blog_1})` }}
                 >
-                  <div className="outline rounded p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
+                  <Outline className="p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
                     <div className="day py-1 px-3 ms-auto rounded">
                       May 1, 2021
                     </div>
@@ -41,7 +42,7 @@ const Blog = () => {
                         Read More
                       </div>
                     </div>
-                  </div>
+                  </Outline>
                 </div>
               </div>
 
@@ -50,7 +51,7 @@ const Blog = () => {
                   className="box p-2 rounded overflow-hidden position-relative"
                   style={{ backgroundImage: `url(${blog_2})` }}
                 >
-                  <div className="outline rounded p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
+                  <Outline className="p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
                     <div className="day py-1 px-3 ms-auto rounded">
                       May 1, 2021
                     </div>
@@ -63,7 +64,7 @@ const Blog = () => {
                         Read More
                       </div>
                     </div>
-                  </div>
+                  </Outline>
                 </div>
               </div>
 
@@ -72,7 +73,7 @@ const Blog = () => {
                   className="box special p-2 rounded overflow-hidden position-relative"
                   style={{ backgroundImage: `url(${blog_3})` }}
                 >
-                  <div className="outline rounded p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
+                  <Outline className="p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
                     <div className="day py-1 px-3 ms-auto rounded">
                       May 1, 2021
                     </div>
@@ -85,7 +86,7 @@ const Blog = () => {
                         Read More
                       </div>
                     </div>
-                  </div>
+                  </Outline>
                 </div>
               </div>
             </div>
@@ -98,7 +99,7 @@ const Blog = () => {
                   className="box special p-2 rounded overflow-hidden position-relative"
                   style={{ backgroundImage: `url(${blog_4})` }}
                 >
-                  <div className="outline rounded p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
+                  <Outline className="p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
                     <div className="day py-1 px-3 ms-auto rounded">
                       May 1, 2021
                     </div>
@@ -111,7 +112,7 @@ const Blog = () => {
                         Read More
                       </div>
                     </div>
-                  </div>
+                  </Outline>
                 </div>
               </div>
 
@@ -120,7 +121,7 @@ const Blog = () => {
                   className="box p-2 rounded overflow-hidden position-relative"
                   style={{ backgroundImage: `url(${blog_5})` }}
                 >
-                  <div className="outline rounded p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
+                  <Outline className="p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
                     <div className="day py-1 px-3 ms-auto rounded">
                       May 1, 2021
                     </div>
@@ -133,7 +134,7 @@ const Blog = () => {
                         Read More
                       </div>
                     </div>
-                  </div>
+                  </Outline>
                 </div>
               </div>
 
@@ -142,7 +143,7 @@ const Blog = () => {
                   className="box p-2 rounded overflow-hidden position-relative"
                   style={{ backgroundImage: `url(${blog_6})` }}
                 >
-                  <div className="outline rounded p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
+                  <Outline className="p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
                     <div className="day py-1 px-3 ms-auto rounded">
                       May 1, 2021
                     </div>
@@ -155,7 +156,7 @@ const Blog = () => {
                         Read More
                       </div>
                     </div>
-                  </div>
+                  </Outline>
                 </div>
               </div>
             </div>

@@ -7,6 +7,7 @@ import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import { Link } from "react-router-dom";
 
 import data from "../../json/data.json";
+import Outline from "../../Components/Outline/Outline";
 
 const Services = () => {
   return (
@@ -31,12 +32,12 @@ const Services = () => {
                     alt={name}
                     className="position-absolute bottom-0 end-0 opacity-25"
                   />
-                  <div className="outline rounded p-3">
+                  <Outline className="p-3">
                     <div className="number fw-bold fs-1">{number}</div>
                     <h3 className="fw-bold text-truncate">{name}</h3>
                     <p className="my-3 text-muted">{description}</p>
                     <Link to="#">Read More</Link>
-                  </div>
+                  </Outline>
                 </div>
               </div>
             );
