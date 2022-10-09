@@ -12,8 +12,8 @@ import friendly from "../../images/friendly-s-restaurant-logo.png";
 
 const Brands = () => {
   return (
-    <div className="brands py-5">
-      <div className="container-fluid px-md-4 px-lg-5">
+    <div className="brands py-5 bg-light">
+      <div className="container-fluid px-md-4 px-lg-5 py-5">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={30}

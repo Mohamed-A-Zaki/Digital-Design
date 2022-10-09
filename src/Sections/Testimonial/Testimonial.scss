@@ -45,7 +45,7 @@
     }
   }
   .testimonial_image {
-    padding: 80px;
+    padding: 100px;
     &::after,
     &::before {
       content: "";
@@ -57,7 +57,7 @@
       inset: 0;
     }
     &::before {
-      inset: 40px;
+      inset: 50px;
     }
     img:not(:first-of-type) {
       width: 60px;
