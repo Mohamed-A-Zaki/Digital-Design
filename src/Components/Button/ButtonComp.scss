@@ -36,9 +36,6 @@
 
   &.secondary-btn {
     border: 1px solid #fff;
-    &:hover {
-      border-color: $yellow-color !important;
-    }
     &::after {
       background-color: $yellow-color;
     }

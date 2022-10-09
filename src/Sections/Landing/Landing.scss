@@ -1,5 +1,4 @@
 @use "../../sass/variabled" as *;
-@use "../../sass/animations" as *;
 
 .landing {
   .image {
@@ -9,15 +8,15 @@
     }
     img:not(:first-of-type) {
       animation: img-animation 4s linear infinite alternate;
-    }
-    img:nth-of-type(2) {
-      animation-delay: 0s;
-    }
-    img:nth-of-type(3) {
-      animation-delay: 0.5s;
-    }
-    img:nth-of-type(4) {
-      animation-delay: 1s;
+      &:nth-of-type(2) {
+        animation-delay: 0s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 0.5s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: 1s;
+      }
     }
   }
   .content {

@@ -9,7 +9,8 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 
 // import swiper
 import "swiper/css";
-import 'swiper/css/pagination';
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import { HashRouter } from "react-router-dom";
 

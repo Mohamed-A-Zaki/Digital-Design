@@ -114,5 +114,42 @@
       "job": "Web Designer",
       "img": "images/team-img8.png"
     }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "John Adarson",
+      "info": "Partner | London",
+      "img": "images/review-img1.jpg",
+      "desc": "There are many variations of passages of It is the available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+      "id": 2,
+      "name": "John Adarson",
+      "info": "Partner | London",
+      "img": "images/review-img2.jpg",
+      "desc": "There are many variations of passages of It is the available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+      "id": 3,
+      "name": "John Adarson",
+      "info": "Partner | London",
+      "img": "images/review-img3.jpg",
+      "desc": "There are many variations of passages of It is the available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+      "id": 4,
+      "name": "John Adarson",
+      "info": "Partner | London",
+      "img": "images/review-img4.jpg",
+      "desc": "There are many variations of passages of It is the available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+      "id": 5,
+      "name": "John Adarson",
+      "info": "Partner | London",
+      "img": "images/review-img5.jpg",
+      "desc": "There are many variations of passages of It is the available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    }
   ]
 }

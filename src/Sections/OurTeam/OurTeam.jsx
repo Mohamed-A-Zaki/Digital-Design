@@ -29,6 +29,7 @@ const OurTeam = () => {
               spaceBetween={10}
               slidesPerView={1}
               pagination={{ clickable: true }}
+              grabCursor={true}
               autoplay={{
                 delay: 2000,
                 disableOnInteraction: false,

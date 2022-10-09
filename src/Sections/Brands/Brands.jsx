@@ -19,6 +19,7 @@ const Brands = () => {
           spaceBetween={30}
           slidesPerView={5}
           loop={true}
+          grabCursor={true}
           pagination={{ clickable: true }}
           autoplay={{
             delay: 2000,

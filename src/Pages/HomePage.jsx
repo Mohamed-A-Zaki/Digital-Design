@@ -7,6 +7,7 @@ import Services from "../Sections/Services/Services";
 import WhyUs from "../Sections/WhyUs/WhyUs";
 import Blog from "../Sections/Blog/Blog";
 import Brands from "../Sections/Brands/Brands";
+import Testimonial from "../Sections/Testimonial/Testimonial";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <GetTouch />
       <WhyUs />
       <OurTeam></OurTeam>
+      <Testimonial></Testimonial>
       <Blog></Blog>
       <Brands></Brands>
     </div>
