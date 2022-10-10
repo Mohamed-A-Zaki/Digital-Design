@@ -8,6 +8,7 @@ import WhyUs from "../Sections/WhyUs/WhyUs";
 import Blog from "../Sections/Blog/Blog";
 import Brands from "../Sections/Brands/Brands";
 import Testimonial from "../Sections/Testimonial/Testimonial";
+import Contact from "../Sections/Contact/Contact";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
       <OurTeam></OurTeam>
       <Testimonial></Testimonial>
       <Blog></Blog>
+      <Contact></Contact>
       <Brands></Brands>
     </div>
   );

@@ -1,0 +1,23 @@
+@use "../../sass/variabled" as *;
+
+.contact-us {
+  form {
+    box-shadow: 0 0.5rem 10rem rgba(0, 0, 0, 0.15) !important;
+    input,
+    textarea {
+      outline: none;
+      &::placeholder {
+        transition: $main-transition;
+      }
+      &:focus {
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+    textarea {
+      height: 130px;
+      resize: none;
+    }
+  }
+}

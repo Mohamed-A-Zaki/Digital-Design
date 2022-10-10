@@ -1,8 +1,9 @@
 import React from "react";
 import Brands from "../Sections/Brands/Brands";
+import Contact from "../Sections/Contact/Contact";
 import GetTouch from "../Sections/GetTouch/GetTouch";
-import Testimonial from "../Sections/Testimonial/Testimonial";
 import Services from "../Sections/Services/Services";
+import Testimonial from "../Sections/Testimonial/Testimonial";
 
 const ServicesPage = () => {
   return (
@@ -10,6 +11,7 @@ const ServicesPage = () => {
       <Services></Services>
       <GetTouch></GetTouch>
       <Testimonial></Testimonial>
+      <Contact></Contact>
       <Brands></Brands>
     </div>
   );

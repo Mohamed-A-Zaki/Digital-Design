@@ -5,9 +5,9 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Footer from "./Sections/Footer/Footer";
 import Navbar from "./Sections/Navbar/Navbar";
 import HomePage from "./Pages/HomePage";
-import ServicesPage from "./Pages/ServicesPage";
-import AboutPage from "./Pages/AboutPage";
 import TeamPage from "./Pages/TeamPage";
+import AboutPage from "./Pages/AboutPage";
+import ServicesPage from "./Pages/ServicesPage";
 
 function App() {
   return (
