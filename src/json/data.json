@@ -151,5 +151,37 @@
       "img": "images/review-img5.jpg",
       "desc": "There are many variations of passages of It is the available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
     }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "category": "web design",
+      "img": "images/portfolio-img1.jpg"
+    },
+    {
+      "id": 2,
+      "category": "ui / ux design",
+      "img": "images/portfolio-img2.jpg"
+    },
+    {
+      "id": 3,
+      "category": "mobile app",
+      "img": "images/portfolio-img3.jpg"
+    },
+    {
+      "id": 4,
+      "category": "graphic design",
+      "img": "images/portfolio-img4.jpg"
+    },
+    {
+      "id": 5,
+      "category": "ui / ux design",
+      "img": "images/portfolio-img5.jpg"
+    },
+    {
+      "id": 6,
+      "category": "web design",
+      "img": "images/portfolio-img6.jpg"
+    }
   ]
 }

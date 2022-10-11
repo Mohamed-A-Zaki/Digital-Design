@@ -1,0 +1,56 @@
+@use "../../sass/variabled" as *;
+
+.portfoilo {
+  .categories {
+    width: fit-content;
+    border-color: $yellow-color !important;
+    li {
+      transition: $main-transition;
+      cursor: pointer;
+      &:hover {
+        color: $yellow-color;
+      }
+      &.active {
+        color: #fff;
+        background-color: $yellow-color;
+      }
+    }
+  }
+  .gallery {
+    .item {
+      img {
+        height: 400px;
+        object-fit: cover;
+        transition: $main-transition * 2;
+      }
+      .overlay {
+        background-color: rgba(#000, 0.6);
+        transition: $main-transition * 2;
+        .title {
+          color: $yellow-color;
+        }
+        svg {
+          color: $yellow-color;
+          width: 40px;
+          height: 40px;
+          padding: 10px;
+          cursor: pointer;
+          transition: $main-transition;
+          &:hover {
+            background-color: $yellow-color;
+            color: #fff;
+            border-color: $yellow-color !important;
+          }
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+        .overlay {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}

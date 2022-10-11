@@ -9,6 +9,7 @@ import Blog from "../Sections/Blog/Blog";
 import Brands from "../Sections/Brands/Brands";
 import Testimonial from "../Sections/Testimonial/Testimonial";
 import Contact from "../Sections/Contact/Contact";
+import Portfoilo from "../Sections/Portfoilo/Portfoilo";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <GetTouch />
       <WhyUs />
       <OurTeam></OurTeam>
+      <Portfoilo></Portfoilo>
       <Testimonial></Testimonial>
       <Blog></Blog>
       <Contact></Contact>
