@@ -9,10 +9,22 @@ import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import data from "../../json/data.json";
 
 const Portfoilo = () => {
+  const [category, setCategory] = useState("all");
+  const [cat_items, setCat_items] = useState(data.portfolio);
+
   const [categories] = useState([
     "all",
-    ...new Set(data.portfolio.map((item) => item.category)),
+    ...new Set(data.portfolio.map(({ category }) => category)),
   ]);
+
+  function handle_filtering(cat) {
+    setCategory(cat);
+    if (cat === "all") {
+      setCat_items(data.portfolio);
+    } else {
+      setCat_items(data.portfolio.filter(({ category }) => category === cat));
+    }
+  }
 
   return (
     <section className="portfoilo py-5">
@@ -25,7 +37,13 @@ const Portfoilo = () => {
         <ul className="categories list-unstyled mb-0 d-flex m-auto border border-2 rounded">
           {categories.map((cat, index) => {
             return (
-              <li key={index} className="text-uppercase py-3 px-4 fw-semibold">
+              <li
+                key={index}
+                onClick={() => handle_filtering(cat)}
+                className={`text-uppercase px-3 px-lg-4 fw-semibold ${
+                  cat === category ? "active" : ""
+                }`}
+              >
                 {cat}
               </li>
             );
@@ -34,7 +52,7 @@ const Portfoilo = () => {
 
         <div className="gallery mt-5">
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            {data.portfolio.map(({ id, category, img }) => {
+            {cat_items.map(({ id, category, img }) => {
               return (
                 <div className="col" key={id}>
                   <div className="item position-relative rounded shadow overflow-hidden">

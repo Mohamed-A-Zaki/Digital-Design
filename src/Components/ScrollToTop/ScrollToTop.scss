@@ -1,0 +1,13 @@
+@use "../../sass/variables" as *;
+
+.scroll-to-top {
+  background-color: $yellow-color;
+  padding: 8px 10px;
+  z-index: 1000;
+  right: -100px;
+  cursor: pointer;
+  transition: $main-transition * 2;
+  &.active {
+    right: 0;
+  }
+}

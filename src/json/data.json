@@ -155,23 +155,23 @@
   "portfolio": [
     {
       "id": 1,
+      "category": "graphic design",
+      "img": "images/portfolio-img4.jpg"
+    },
+    {
+      "id": 2,
       "category": "web design",
       "img": "images/portfolio-img1.jpg"
     },
     {
-      "id": 2,
+      "id": 3,
       "category": "ui / ux design",
       "img": "images/portfolio-img2.jpg"
     },
     {
-      "id": 3,
+      "id": 4,
       "category": "mobile app",
       "img": "images/portfolio-img3.jpg"
-    },
-    {
-      "id": 4,
-      "category": "graphic design",
-      "img": "images/portfolio-img4.jpg"
     },
     {
       "id": 5,

@@ -35,3 +35,12 @@
     transform: scale(2);
   }
 }
+
+@keyframes portfolio_animation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

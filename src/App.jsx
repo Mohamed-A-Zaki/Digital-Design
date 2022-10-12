@@ -8,10 +8,13 @@ import HomePage from "./Pages/HomePage";
 import TeamPage from "./Pages/TeamPage";
 import AboutPage from "./Pages/AboutPage";
 import ServicesPage from "./Pages/ServicesPage";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop></ScrollToTop>
+      
       <Navbar></Navbar>
 
       <Routes>
