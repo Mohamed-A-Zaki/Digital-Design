@@ -38,8 +38,10 @@ const Footer = () => {
             </form>
             {/* end form */}
 
+            <hr className="my-5 opacity-100"/>
+
             {/* start row */}
-            <div className="row g-4 mt-5">
+            <div className="row g-4">
               {/* row-cols-1 row-cols-md-2 row-cols-lg-4 */}
               <div className="col-md-6 col-xl-3">
                 <div className="box">

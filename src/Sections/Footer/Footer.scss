@@ -21,6 +21,10 @@ footer {
     }
   }
 
+  hr {
+    border-top: 1px dashed $yellow-color;
+  }
+
   .box {
     svg {
       color: $yellow-color !important;
