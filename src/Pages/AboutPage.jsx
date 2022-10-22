@@ -8,11 +8,11 @@ import Testimonial from "../Sections/Testimonial/Testimonial";
 const AboutPage = () => {
   return (
     <div className="about-page">
-      <WhyUs></WhyUs>
-      <OurTeam></OurTeam>
-      <Testimonial></Testimonial>
-      <Contact></Contact>
-      <Brands></Brands>
+      <WhyUs />
+      <OurTeam />
+      <Testimonial />
+      <Contact />
+      <Brands />
     </div>
   );
 };

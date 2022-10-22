@@ -15,7 +15,7 @@ const Testimonial = () => {
   return (
     <section className="testimonial py-5 bg-light">
       <div className="container">
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-xl-7">
             <div className="box">
               <MainHeading className="special">Testimonial</MainHeading>

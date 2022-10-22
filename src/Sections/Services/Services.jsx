@@ -12,11 +12,11 @@ import Outline from "../../Components/Outline/Outline";
 const Services = () => {
   return (
     <section className="services py-5">
-      <div className="container pb-5">
-        <div className="heading text-center m-auto mw-100">
+      <div className="container">
+        <div className="heading text-center">
           <MainHeading>Services</MainHeading>
           <SectionHeading>What Can We Do For You</SectionHeading>
-          <p className="text-muted">
+          <p className="text-muted m-auto">
             It is the dolor sit amet, consectetur adipiscing elit. Sed quis
             accumsan nisi Ut ut felis congue nisl hendrerit commodo.
           </p>

@@ -8,7 +8,7 @@ const ButtonComp = ({ className, type, onClick, children }) => {
       onClick={onClick}
       className={`btn-comp btn ${
         className || ""
-      } px-4 text-white fw-bold position-relative overflow-hidden`}
+      } px-4 py-2 text-white fw-bold position-relative overflow-hidden`}
     >
       {children}
     </button>

@@ -183,5 +183,66 @@
       "category": "web design",
       "img": "images/portfolio-img6.jpg"
     }
+  ],
+  "pricing": [
+    {
+      "id": 1,
+      "plan": "Basic Plan",
+      "price": {
+        "monthly": 25,
+        "yearly": 39
+      },
+      "features": {
+        "active": [
+          "Graphic Design",
+          "Web Design",
+          "UI / UX Design",
+          "HTML/CSS"
+        ],
+        "not-active": [
+          "SEO Marketing",
+          "Digital Marketing",
+          "Social Media Marketing"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "plan": "Standard Plan",
+      "price": {
+        "monthly": 35,
+        "yearly": 44
+      },
+      "features": {
+        "active": [
+          "Graphic Design",
+          "Web Design",
+          "UI / UX Design",
+          "HTML/CSS",
+          "SEO Marketing"
+        ],
+        "not-active": ["Digital Marketing", "Social Media Marketing"]
+      }
+    },
+    {
+      "id": 3,
+      "plan": "Premium Plan",
+      "price": {
+        "monthly": 45,
+        "yearly": 59
+      },
+      "features": {
+        "active": [
+          "Graphic Design",
+          "Web Design",
+          "UI / UX Design",
+          "HTML/CSS",
+          "SEO Marketing",
+          "Digital Marketing",
+          "Social Media Marketing"
+        ],
+        "not-active": []
+      }
+    }
   ]
 }

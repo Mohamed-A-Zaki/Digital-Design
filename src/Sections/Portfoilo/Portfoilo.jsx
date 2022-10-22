@@ -7,15 +7,16 @@ import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 import data from "../../json/data.json";
+import Categories from "../../Components/Categories/Categories";
 
 const Portfoilo = () => {
-  const [category, setCategory] = useState("all");
-  const [cat_items, setCat_items] = useState(data.portfolio);
-
   const [categories] = useState([
     "all",
     ...new Set(data.portfolio.map(({ category }) => category)),
   ]);
+
+  const [category, setCategory] = useState(categories[0]);
+  const [cat_items, setCat_items] = useState(data.portfolio);
 
   function handle_filtering(cat) {
     setCategory(cat);
@@ -34,21 +35,11 @@ const Portfoilo = () => {
           <SectionHeading>See Our Recent Works</SectionHeading>
         </div>
 
-        <ul className="categories list-unstyled mb-0 d-flex m-auto border border-2 rounded">
-          {categories.map((cat, index) => {
-            return (
-              <li
-                key={index}
-                onClick={() => handle_filtering(cat)}
-                className={`text-uppercase px-3 px-lg-4 fw-semibold ${
-                  cat === category ? "active" : ""
-                }`}
-              >
-                {cat}
-              </li>
-            );
-          })}
-        </ul>
+        <Categories
+          category={category}
+          categories={categories}
+          handle_filtering={handle_filtering}
+        ></Categories>
 
         <div className="gallery mt-5">
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">

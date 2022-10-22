@@ -1,33 +1,41 @@
 @use "../../sass/variables" as *;
 
-.services {
+.pricing {
   .item {
     transition: $main-transition;
     .outline {
       border-color: transparent;
     }
-    .number {
-      -webkit-text-stroke: 1px $yellow-color;
+    .price {
+      -webkit-text-stroke: 1.5px $yellow-color;
       -webkit-text-fill-color: #fff;
     }
-    a {
-      color: $yellow-color;
-      transition: $main-transition;
+    .btn {
+      color: $yellow-color !important;
+      border: 1px solid $yellow-color;
       &:hover {
-        color: #fff;
+        color: #fff !important;
       }
     }
     &:hover {
       background-color: $bootstrap-dark-color;
       color: #fff;
+      transform: translateY(-15px);
       .outline {
         border-color: $yellow-color;
       }
-      .number {
+      .price {
         -webkit-text-fill-color: $yellow-color;
       }
-      p {
+      hr {
+        border-color: #fff !important;
+      }
+      .btn {
         color: #fff !important;
+        border: 1px solid #fff;
+        &:hover {
+          border-color: $yellow-color;
+        }
       }
     }
   }

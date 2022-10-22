@@ -13,7 +13,7 @@ import { BsFillTriangleFill } from "react-icons/bs";
 const AboutUs = () => {
   return (
     <section className="about-us py-5 my-lg-5">
-      <div className="container py-lg-5 ">
+      <div className="container">
         <div className="row row-cols-1 row-cols-lg-2 g-4">
           <div className="col">
             <div className="box">

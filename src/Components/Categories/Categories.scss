@@ -1,0 +1,18 @@
+@use "../../sass/variables" as *;
+
+.categories {
+  width: fit-content;
+  border-color: $yellow-color !important;
+  li {
+    transition: $main-transition * 2;
+    padding: 10px 0;
+    cursor: pointer;
+    &:hover {
+      color: $yellow-color;
+    }
+    &.active {
+      color: #fff;
+      background-color: $yellow-color;
+    }
+  }
+}

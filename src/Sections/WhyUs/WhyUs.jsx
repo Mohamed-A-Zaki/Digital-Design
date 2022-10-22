@@ -9,7 +9,7 @@ import data from "../../json/data.json";
 const WhyUs = () => {
   return (
     <section className="why-us py-5">
-      <div className="container py-5">
+      <div className="container">
         <div className="row row-cols-1 row-cols-lg-2 g-5 align-items-center">
           <div className="col">
             <div className="box">

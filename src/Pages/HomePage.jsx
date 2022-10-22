@@ -10,6 +10,7 @@ import Brands from "../Sections/Brands/Brands";
 import Testimonial from "../Sections/Testimonial/Testimonial";
 import Contact from "../Sections/Contact/Contact";
 import Portfoilo from "../Sections/Portfoilo/Portfoilo";
+import Pricing from "../Sections/Pricing/Pricing";
 
 const HomePage = () => {
   return (
@@ -19,12 +20,13 @@ const HomePage = () => {
       <Services />
       <GetTouch />
       <WhyUs />
-      <OurTeam></OurTeam>
-      <Portfoilo></Portfoilo>
-      <Testimonial></Testimonial>
-      <Blog></Blog>
-      <Contact></Contact>
-      <Brands></Brands>
+      <Pricing />
+      <Portfoilo />
+      <OurTeam />
+      <Testimonial />
+      <Blog />
+      <Contact />
+      <Brands />
     </div>
   );
 };
