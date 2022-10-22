@@ -1,0 +1,30 @@
+@use "../../sass/variables" as *;
+
+.breadcrumb-section {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(#000, 0.6);
+    z-index: -1;
+  }
+  .breadcrumb {
+    background-color: $yellow-color;
+    width: fit-content;
+    a {
+      transition: $main-transition;
+      &:hover {
+        color: #000 !important;
+      }
+    }
+    .breadcrumb-item.active {
+      &::before {
+        color: #fff;
+      }
+    }
+  }
+}
