@@ -3,16 +3,19 @@ import "./Landing.scss";
 import React from "react";
 import Outline from "../../Components/Outline/Outline";
 import ButtonComp from "../../Components/Button/ButtonComp";
+import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
 
 import banner from "../../images/banner-man.png";
 import chart from "../../images/chart.svg";
 import client from "../../images/client-satisfaction.svg";
 import experience from "../../images/experience.svg";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+  let navigate = useNavigate();
   return (
     <section className="landing bg-dark pb-5 pt-3">
-      <div className="container-fluid px-md-4 px-lg-5 w-auto">
+      <ContainerFluid className="w-auto">
         <Outline>
           <div className="row flex-column-reverse flex-lg-row align-items-center text-center text-lg-start">
             <div className="col">
@@ -49,14 +52,17 @@ const Landing = () => {
                   Various versions have evolved over the years, sometimes by
                   accident, sometimes on purpose
                 </p>
-                <ButtonComp className="secondary-btn">
+                <ButtonComp
+                  className="secondary-btn"
+                  onClick={() => navigate("/contact")}
+                >
                   Contact Us Now
                 </ButtonComp>
               </div>
             </div>
           </div>
         </Outline>
-      </div>
+      </ContainerFluid>
     </section>
   );
 };

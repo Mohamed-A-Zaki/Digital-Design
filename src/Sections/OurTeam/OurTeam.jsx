@@ -2,6 +2,7 @@ import "./OurTeam.scss";
 
 import React from "react";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
+import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SocialMedia from "../../Components/SocialMedia/SocialMedia";
 import Outline from "../../Components/Outline/Outline";
@@ -14,12 +15,12 @@ import data from "../../json/data.json";
 const OurTeam = () => {
   return (
     <section className="our-team bg-dark py-5">
-      <div className="container-fluid px-md-4 px-lg-5 text-white">
+      <ContainerFluid className="text-white">
         <Outline>
           <div className="container py-5">
             <div className="heading text-center">
               <MainHeading className="dark-border">Our Team</MainHeading>
-              <SectionHeading className="text-white">
+              <SectionHeading>
                 Meet Our Experts
               </SectionHeading>
             </div>
@@ -73,7 +74,7 @@ const OurTeam = () => {
             </Swiper>
           </div>
         </Outline>
-      </div>
+      </ContainerFluid>
     </section>
   );
 };

@@ -21,10 +21,10 @@
         color: #000 !important;
       }
     }
-    .breadcrumb-item.active {
-      &::before {
-        color: #fff;
-      }
-    }
+    // .breadcrumb-item {
+    //   &::before {
+    //     color: #fff ;
+    //   }
+    // }
   }
 }

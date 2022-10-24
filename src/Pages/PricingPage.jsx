@@ -1,23 +1,23 @@
 import React from "react";
 
 import Brands from "../Sections/Brands/Brands";
+import Pricing from "../Sections/Pricing/Pricing";
 import Contact from "../Sections/Contact/Contact";
-import OurTeam from "../Sections/OurTeam/OurTeam";
 import GetTouch from "../Sections/GetTouch/GetTouch";
-import Testimonial from "../Sections/Testimonial/Testimonial";
 import Breadcrumb from "../Sections/Breadcrumb/Breadcrumb";
+import Testimonial from "../Sections/Testimonial/Testimonial";
 
-import img from "../images/team-banner.jpg";
+import img from "../images/pricing-banner.jpg";
 
-const TeamPage = () => {
+const PricingPage = () => {
   return (
-    <div className="team-page">
-      <Breadcrumb img={img} title="Our Team">
+    <div className="pricing-page">
+      <Breadcrumb img={img} title="Our Pricing">
         <li className="breadcrumb-item active text-white" aria-current="page">
-          Team
+          Pricing
         </li>
       </Breadcrumb>
-      <OurTeam />
+      <Pricing />
       <GetTouch />
       <Testimonial />
       <Contact />
@@ -26,4 +26,4 @@ const TeamPage = () => {
   );
 };
 
-export default TeamPage;
+export default PricingPage;

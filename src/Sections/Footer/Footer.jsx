@@ -6,6 +6,7 @@ import ButtonComp from "../../Components/Button/ButtonComp";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SocialMedia from "../../Components/SocialMedia/SocialMedia";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
+import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
 
 import { Link } from "react-router-dom";
 import { MdPhone, MdEmail, MdLocationPin } from "react-icons/md";
@@ -13,7 +14,7 @@ import { MdPhone, MdEmail, MdLocationPin } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className="bg-dark pt-5 text-white">
-      <div className="container-fluid px-md-4 px-lg-5">
+      <ContainerFluid>
         <Outline>
           <div className="container py-5">
             {/* start form */}
@@ -38,7 +39,7 @@ const Footer = () => {
             </form>
             {/* end form */}
 
-            <hr className="my-5 opacity-100"/>
+            <hr className="my-5 opacity-100" />
 
             {/* start row */}
             <div className="row g-4">
@@ -198,7 +199,7 @@ const Footer = () => {
             {/* end row */}
           </div>
         </Outline>
-      </div>
+      </ContainerFluid>
 
       <div className="container">
         <div className="copy-right d-flex justify-content-between flex-column flex-lg-row gap-3 py-4">

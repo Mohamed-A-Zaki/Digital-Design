@@ -4,10 +4,11 @@ import React, { useEffect, useState } from "react";
 import ButtonComp from "../../Components/Button/ButtonComp";
 
 import { FaBars } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [navbar_theme, setNavbar_theme] = useState("dark");
+  let navigate = useNavigate();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -217,6 +218,7 @@ const Navbar = () => {
               className={`${
                 navbar_theme === "dark" ? "nav-btn" : "main-btn"
               } d-none d-lg-block`}
+              onClick={() => navigate("/contact")}
             >
               Get Started
             </ButtonComp>

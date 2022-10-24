@@ -2,13 +2,16 @@ import React from "react";
 import ButtonComp from "../../Components/Button/ButtonComp";
 import Outline from "../../Components/Outline/Outline";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
+import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
 
 import image from "../../images/get-in-touch.png";
+import { useNavigate } from "react-router-dom";
 
 const GetTouch = () => {
+  let navigate = useNavigate();
   return (
     <section className="get-in-touch py-5 bg-light position-relative text-center text-lg-start">
-      <div className="container-fluid px-md-4 px-lg-5">
+      <ContainerFluid>
         <Outline>
           <div className="container">
             <div className="row py-5">
@@ -17,7 +20,10 @@ const GetTouch = () => {
                   <SectionHeading className="display-5 mb-5">
                     Have A Project In Mind? Let's Get To Work.
                   </SectionHeading>
-                  <ButtonComp className="main-btn px-5 py-2">
+                  <ButtonComp
+                    className="main-btn px-5 py-2"
+                    onClick={() => navigate("/contact")}
+                  >
                     Get In Touch
                   </ButtonComp>
                 </div>
@@ -35,7 +41,7 @@ const GetTouch = () => {
             </div>
           </div>
         </Outline>
-      </div>
+      </ContainerFluid>
     </section>
   );
 };

@@ -9,8 +9,11 @@ import about from "../../images/about-img.jpg";
 import video from "../../images/banner-video.mp4";
 
 import { BsFillTriangleFill } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+  let navigate = useNavigate();
+
   return (
     <section className="about-us py-5 my-lg-5">
       <div className="container">
@@ -38,7 +41,7 @@ const AboutUs = () => {
                   purpose.
                 </div>
               </div>
-              <ButtonComp className="main-btn px-5 py-2">Read More</ButtonComp>
+              <ButtonComp className="main-btn px-5 py-2" onClick={() => navigate("/about")}>Read More</ButtonComp>
             </div>
           </div>
 
