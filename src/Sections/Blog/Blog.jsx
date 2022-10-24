@@ -14,7 +14,7 @@ import blog_6 from "../../images/blog-img6.jpg";
 
 const Blog = () => {
   return (
-    <div className="blog py-5">
+    <section className="blog py-5">
       <div className="container">
         <div className="heading text-center mb-5">
           <MainHeading>Blog Posts</MainHeading>
@@ -163,7 +163,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -9,7 +9,7 @@ import img from "../images/portfolio-banner.jpg";
 
 const PortfolioPage = () => {
   return (
-    <div className="portfolio-page">
+    <React.Fragment>
       <Breadcrumb img={img} title="Our Portfolio">
         <li className="breadcrumb-item active text-white" aria-current="page">
           Portfolio
@@ -18,7 +18,7 @@ const PortfolioPage = () => {
       <Portfoilo />
       <Contact />
       <Brands />
-    </div>
+    </React.Fragment>
   );
 };
 

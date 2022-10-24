@@ -12,7 +12,7 @@ import img from "../images/services-banner.jpg";
 
 const ServicesPage = () => {
   return (
-    <div className="services-page">
+    <React.Fragment>
       <Breadcrumb img={img} title="Our Services">
         <li className="breadcrumb-item active text-white" aria-current="page">
           Services
@@ -24,7 +24,7 @@ const ServicesPage = () => {
       <Testimonial />
       <Contact />
       <Brands />
-    </div>
+    </React.Fragment>
   );
 };
 

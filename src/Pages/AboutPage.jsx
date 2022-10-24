@@ -11,7 +11,7 @@ import img from "../images/about-banner.jpg";
 
 const AboutPage = () => {
   return (
-    <div className="about-page">
+    <React.Fragment>
       <Breadcrumb img={img} title="About Us">
         <li className="breadcrumb-item active text-white" aria-current="page">
           About
@@ -22,7 +22,7 @@ const AboutPage = () => {
       <Testimonial />
       <Contact />
       <Brands />
-    </div>
+    </React.Fragment>
   );
 };
 

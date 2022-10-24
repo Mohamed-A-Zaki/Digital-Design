@@ -14,7 +14,7 @@ import Pricing from "../Sections/Pricing/Pricing";
 
 const HomePage = () => {
   return (
-    <div className="home-page">
+    <React.Fragment>
       <Landing />
       <AboutUs />
       <Services />
@@ -27,7 +27,7 @@ const HomePage = () => {
       <Blog />
       <Contact />
       <Brands />
-    </div>
+    </React.Fragment>
   );
 };
 

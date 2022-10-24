@@ -8,7 +8,7 @@ import img from "../images/blog-bg.jpg";
 
 const BlogDetailsPage = () => {
   return (
-    <div className="blog-details-page">
+    <React.Fragment>
       <Breadcrumb img={img} title="Blog Detail">
         <li className="breadcrumb-item">
           <Link to="/blog-list" className="text-decoration-none text-white">
@@ -19,9 +19,8 @@ const BlogDetailsPage = () => {
           Blog Detail
         </li>
       </Breadcrumb>
-
       <Brands />
-    </div>
+    </React.Fragment>
   );
 };
 

@@ -11,7 +11,7 @@ import img from "../images/pricing-banner.jpg";
 
 const PricingPage = () => {
   return (
-    <div className="pricing-page">
+    <React.Fragment>
       <Breadcrumb img={img} title="Our Pricing">
         <li className="breadcrumb-item active text-white" aria-current="page">
           Pricing
@@ -22,7 +22,7 @@ const PricingPage = () => {
       <Testimonial />
       <Contact />
       <Brands />
-    </div>
+    </React.Fragment>
   );
 };
 

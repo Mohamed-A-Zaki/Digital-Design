@@ -7,14 +7,14 @@ import img from "../images/blog-bg.jpg";
 
 const BlogListPage = () => {
   return (
-    <div className="blog-list-page">
+    <React.Fragment>
       <Breadcrumb img={img} title="Our Blog">
         <li className="breadcrumb-item active text-white" aria-current="page">
           Blog
         </li>
       </Breadcrumb>
       <Brands />
-    </div>
+    </React.Fragment>
   );
 };
 

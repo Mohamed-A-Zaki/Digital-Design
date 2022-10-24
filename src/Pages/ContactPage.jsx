@@ -7,14 +7,14 @@ import img from "../images/contact-banner.jpg";
 
 const ContactPage = () => {
   return (
-    <div className="contact-page">
+    <React.Fragment>
       <Breadcrumb img={img} title="Contact Us">
         <li className="breadcrumb-item active text-white" aria-current="page">
           Contact Us
         </li>
       </Breadcrumb>
       <Brands />
-    </div>
+    </React.Fragment>
   );
 };
 
