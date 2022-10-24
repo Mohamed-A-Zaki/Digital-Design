@@ -21,7 +21,8 @@ const Contact = () => {
             <form className="p-5 rounded">
               <MainHeading className="special">Contact Us</MainHeading>
               <SectionHeading>Contact Us For Any Information</SectionHeading>
-              <div className="d-flex gap-4 mb-4">
+
+              <div className="d-flex flex-column flex-md-row gap-4 mb-4">
                 <input
                   type="text"
                   className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
@@ -34,7 +35,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="d-flex gap-4 mb-4">
+              <div className="d-flex flex-column flex-md-row gap-4 mb-4">
                 <input
                   type="email"
                   className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
