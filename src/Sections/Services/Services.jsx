@@ -1,13 +1,14 @@
 import "./Services.scss";
 
 import React from "react";
-import MainHeading from "../../Components/MainHeading/MainHeading";
-import SectionHeading from "../../Components/SectionHeading/SectionHeading";
-
 import { Link } from "react-router-dom";
 
-import data from "../../json/data.json";
 import Outline from "../../Components/Outline/Outline";
+import MainHeading from "../../Components/MainHeading/MainHeading";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
+import HeadingParagraph from "../../Components/HeadingParagraph/HeadingParagraph";
+
+import data from "../../json/data.json";
 
 const Services = () => {
   return (
@@ -16,10 +17,10 @@ const Services = () => {
         <div className="heading text-center">
           <MainHeading>Services</MainHeading>
           <SectionHeading>What Can We Do For You</SectionHeading>
-          <p className="text-muted m-auto">
+          <HeadingParagraph>
             It is the dolor sit amet, consectetur adipiscing elit. Sed quis
             accumsan nisi Ut ut felis congue nisl hendrerit commodo.
-          </p>
+          </HeadingParagraph>
         </div>
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-3">

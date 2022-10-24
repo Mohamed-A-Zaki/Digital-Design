@@ -1,14 +1,14 @@
 import "./Pricing.scss";
+import React, { useState } from "react";
 
-import React from "react";
-import MainHeading from "../../Components/MainHeading/MainHeading";
-import SectionHeading from "../../Components/SectionHeading/SectionHeading";
-import { useState } from "react";
-
-import data from "../../json/data.json";
-import Categories from "../../Components/Categories/Categories";
 import Outline from "../../Components/Outline/Outline";
 import ButtonComp from "../../Components/Button/ButtonComp";
+import Categories from "../../Components/Categories/Categories";
+import MainHeading from "../../Components/MainHeading/MainHeading";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
+import HeadingParagraph from "../../Components/HeadingParagraph/HeadingParagraph";
+
+import data from "../../json/data.json";
 
 const Pricing = () => {
   const [categories] = useState(Object.keys(data.pricing[0].price));
@@ -21,13 +21,13 @@ const Pricing = () => {
   return (
     <section className="pricing py-5">
       <div className="container">
-        <div className="heading text-center ">
+        <div className="heading text-center">
           <MainHeading>Pricing</MainHeading>
           <SectionHeading>Our Special Plans For Your Business</SectionHeading>
-          <p className="text-muted m-auto mb-4">
+          <HeadingParagraph className="mb-4">
             The generated That is the therefore always free from repetition,
             injected humour, or non-characteristic words etc.
-          </p>
+          </HeadingParagraph>
         </div>
 
         <Categories
