@@ -24,13 +24,11 @@ const ServicesPage = () => {
       <div className="services py-5">
         <div className="container">
           <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-            {data.services.map((service) => {
-              return (
-                <div className="col" key={service.id}>
-                  <Service {...service}></Service>
-                </div>
-              );
-            })}
+            {data.services.map((service) => (
+              <div className="col" key={service.id}>
+                <Service {...service}></Service>
+              </div>
+            ))}
           </div>
         </div>
       </div>

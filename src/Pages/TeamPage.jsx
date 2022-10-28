@@ -22,13 +22,11 @@ const TeamPage = () => {
       <div className="our-team py-5">
         <div className="container">
           <div className="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-            {data.our_team.map((member) => {
-              return (
-                <div className="col" key={member.id}>
-                  <TeamMember {...member}></TeamMember>
-                </div>
-              );
-            })}
+            {data.our_team.map((member) => (
+              <div className="col" key={member.id}>
+                <TeamMember {...member}></TeamMember>
+              </div>
+            ))}
           </div>
         </div>
       </div>
