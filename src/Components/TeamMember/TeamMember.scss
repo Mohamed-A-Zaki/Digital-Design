@@ -1,0 +1,24 @@
+@use "../../sass/variables" as *;
+
+.team-member {
+  .outline {
+    top: 5rem;
+    z-index: -1;
+  }
+  img {
+    object-fit: cover;
+    height: 280px;
+  }
+  .data {
+    background-color: #232A35;
+    .job {
+      color: $yellow-color;
+    }
+  }
+  .social-wrapper {
+    transition: $main-transition;
+  }
+  &:hover .social-wrapper {
+    opacity: 1 !important;
+  }
+}

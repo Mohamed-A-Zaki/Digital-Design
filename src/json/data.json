@@ -41,6 +41,27 @@
       "name": "Social Media Marketing",
       "img": "images/social-media.svg",
       "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
+    },
+    {
+      "id": 7,
+      "number": "07",
+      "name": "SEO & Backlinks",
+      "img": "images/seo-backlink.svg",
+      "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
+    },
+    {
+      "id": 8,
+      "number": "08",
+      "name": "Digital Marketing",
+      "img": "images/digital-marketing.svg",
+      "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
+    },
+    {
+      "id": 9,
+      "number": "09",
+      "name": "24x7 Support",
+      "img": "images/support.svg",
+      "description": "That is the simply dummy text of the printing and typesetting industry. Various sometimes by accident, sometimes on purpose."
     }
   ],
   "statistics": [

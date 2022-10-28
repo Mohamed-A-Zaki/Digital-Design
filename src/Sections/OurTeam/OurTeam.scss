@@ -5,28 +5,6 @@
     user-select: none;
     .swiper-wrapper {
       padding-bottom: 4.5rem;
-      .swiper-slide {
-        .outline {
-          top: 5rem;
-          z-index: -1;
-        }
-        img {
-          object-fit: cover;
-          height: 280px;
-        }
-        .data {
-          background-color: $dark-color;
-          .job {
-            color: $yellow-color;
-          }
-        }
-        .social-wrapper {
-          transition: $main-transition;
-        }
-        &:hover .social-wrapper {
-          opacity: 1 !important;
-        }
-      }
     }
     .swiper-pagination {
       bottom: 0;

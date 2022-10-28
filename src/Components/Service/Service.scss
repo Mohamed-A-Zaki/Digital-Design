@@ -1,0 +1,35 @@
+@use "../../sass/variables" as *;
+
+.service {
+  transition: $main-transition;
+  img {
+    width: 140px;
+  }
+  .outline {
+    border-color: transparent;
+  }
+  .number {
+    -webkit-text-stroke: 1px $yellow-color;
+    -webkit-text-fill-color: #fff;
+  }
+  a {
+    color: $yellow-color;
+    transition: $main-transition;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &:hover {
+    background-color: $bootstrap-dark-color;
+    color: #fff;
+    .outline {
+      border-color: $yellow-color;
+    }
+    .number {
+      -webkit-text-fill-color: $yellow-color;
+    }
+    p {
+      color: #fff !important;
+    }
+  }
+}

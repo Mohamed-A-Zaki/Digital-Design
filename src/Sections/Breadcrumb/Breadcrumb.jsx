@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Breadcrumb = ({ img, title, children }) => {
   return (
     <section
-      className="breadcrumb-section position-relative py-5"
+      className="breadcrumb-section position-relative"
       style={{ backgroundImage: `url(${img})` }}
     >
       <ContainerFluid className="py-5">

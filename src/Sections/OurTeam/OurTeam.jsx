@@ -4,13 +4,13 @@ import React from "react";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
 import MainHeading from "../../Components/MainHeading/MainHeading";
-import SocialMedia from "../../Components/SocialMedia/SocialMedia";
 import Outline from "../../Components/Outline/Outline";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 
 import data from "../../json/data.json";
+import TeamMember from "../../Components/TeamMember/TeamMember";
 
 const OurTeam = () => {
   return (
@@ -20,9 +20,7 @@ const OurTeam = () => {
           <div className="container py-5">
             <div className="heading text-center">
               <MainHeading className="dark-border">Our Team</MainHeading>
-              <SectionHeading>
-                Meet Our Experts
-              </SectionHeading>
+              <SectionHeading>Meet Our Experts</SectionHeading>
             </div>
 
             <Swiper
@@ -46,28 +44,10 @@ const OurTeam = () => {
                 },
               }}
             >
-              {data.our_team.map(({ id, name, job, img }) => {
+              {data.our_team.map((member) => {
                 return (
-                  <SwiperSlide key={id}>
-                    <div className="top position-relative mx-4">
-                      <Outline className="rounded-0 rounded-top border-bottom-0 position-absolute bottom-0 end-0 start-0"></Outline>
-                      <div className="image">
-                        <img
-                          src={img}
-                          className="img-fluid d-block m-auto"
-                          alt="img"
-                        />
-                      </div>
-                    </div>
-                    <div className="details position-relative rounded overflow-auto">
-                      <div className="data text-center p-2">
-                        <div className="name fw-bold fs-2">{name}</div>
-                        <div className="job text-uppercase">{job}</div>
-                      </div>
-                      <div className="social-wrapper position-absolute top-0 start-0 end-0 bottom-0 bg-light bg-opacity-75 d-flex align-items-center justify-content-center opacity-0">
-                        <SocialMedia></SocialMedia>
-                      </div>
-                    </div>
+                  <SwiperSlide key={member.id}>
+                    <TeamMember {...member}></TeamMember>
                   </SwiperSlide>
                 );
               })}
