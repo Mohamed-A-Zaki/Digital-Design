@@ -21,7 +21,7 @@ const HomePage = () => {
     <React.Fragment>
       <Landing />
       <AboutUs />
-      <Services />
+      <Services heading={true} count={6} />
       <GetTouch />
       <WhyUs />
       <Pricing />
