@@ -1,0 +1,9 @@
+@use "../../sass/variables" as *;
+
+.portfolio-details {
+  img {
+    height: 450px;
+    object-fit: cover;
+    border-color: $yellow-color !important;
+  }
+}

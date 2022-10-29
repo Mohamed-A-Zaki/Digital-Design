@@ -6,6 +6,7 @@ import Contact from "../Sections/Contact/Contact";
 import Brands from "../Sections/Brands/Brands";
 
 import img from "../images/portfolio-banner.jpg";
+import PortfolioDetails from "../Sections/PortfolioDetails/PortfolioDetails";
 
 const PortfolioDetailsPage = () => {
   useEffect(() => {
@@ -24,6 +25,9 @@ const PortfolioDetailsPage = () => {
           Portfolio Detail
         </li>
       </Breadcrumb>
+
+      <PortfolioDetails></PortfolioDetails>
+
       <Contact />
       <Brands />
     </React.Fragment>

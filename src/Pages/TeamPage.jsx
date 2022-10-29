@@ -23,7 +23,7 @@ const TeamPage = () => {
         </li>
       </Breadcrumb>
 
-      <div className="our-team py-5">
+      <section className="our-team py-5">
         <div className="container">
           <div className="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
             {data.our_team.map((member) => (
@@ -33,7 +33,7 @@ const TeamPage = () => {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* <OurTeam /> */}
       <GetTouch />

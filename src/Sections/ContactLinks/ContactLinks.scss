@@ -1,0 +1,15 @@
+@use "../../sass/variables" as *;
+
+.contact-links {
+  svg {
+    width: 40px;
+    height: 40px;
+    color: $yellow-color;
+  }
+  a {
+    transition: $main-transition;
+    &:hover {
+      color: $yellow-color !important;
+    }
+  }
+}

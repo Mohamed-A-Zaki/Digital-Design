@@ -13,9 +13,9 @@ const Breadcrumb = ({ img, title, children }) => {
     >
       <ContainerFluid className="py-5">
         <Outline className="py-5">
-          <h3 className="display-4 fw-bold text-white text-center mt-5">
+          <h2 className="display-4 fw-bold text-white text-center mt-5">
             {title}
-          </h3>
+          </h2>
           <nav aria-label="breadcrumb" className="my-5">
             <ol className="breadcrumb text-uppercase m-auto py-2 px-4 fw-bold rounded">
               <li className="breadcrumb-item">
