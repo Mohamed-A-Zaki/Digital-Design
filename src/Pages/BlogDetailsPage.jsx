@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import Brands from "../Sections/Brands/Brands";
@@ -7,6 +7,10 @@ import Breadcrumb from "../Sections/Breadcrumb/Breadcrumb";
 import img from "../images/blog-bg.jpg";
 
 const BlogDetailsPage = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <React.Fragment>
       <Breadcrumb img={img} title="Blog Detail">

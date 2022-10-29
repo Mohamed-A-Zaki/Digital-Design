@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutUs from "../Sections/AboutUs/AboutUs";
 import GetTouch from "../Sections/GetTouch/GetTouch";
 import Landing from "../Sections/Landing/Landing";
@@ -13,6 +13,10 @@ import Portfoilo from "../Sections/Portfoilo/Portfoilo";
 import Pricing from "../Sections/Pricing/Pricing";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <React.Fragment>
       <Landing />

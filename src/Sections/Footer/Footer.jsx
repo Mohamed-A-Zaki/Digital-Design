@@ -31,7 +31,7 @@ const Footer = () => {
                 />
                 <ButtonComp
                   type="submit"
-                  className="main-btn position-absolute end-0 top-50 translate-middle-y me-3 mt-3 mt-xl-0"
+                  className="main-btn position-absolute end-0 top-50 translate-middle-y me-2 mt-3 mt-xl-0"
                 >
                   Subscribe Now
                 </ButtonComp>

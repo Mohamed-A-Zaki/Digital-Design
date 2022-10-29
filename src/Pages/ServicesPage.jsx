@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Brands from "../Sections/Brands/Brands";
 import Contact from "../Sections/Contact/Contact";
@@ -13,6 +13,10 @@ import img from "../images/services-banner.jpg";
 import data from "../json/data.json";
 
 const ServicesPage = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <React.Fragment>
       <Breadcrumb img={img} title="Our Services">
