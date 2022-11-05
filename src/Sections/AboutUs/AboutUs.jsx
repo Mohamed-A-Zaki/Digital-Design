@@ -11,7 +11,7 @@ const AboutUs = ({ model, bg_image, children }) => {
   return (
     <section className={`about-us ${bg_image ? "bg-image my-lg-5" : ""} py-5`}>
       <div className="container">
-        <div className="row row-cols-1 row-cols-lg-2 g-4 align-items-center">
+        <div className="row row-cols-1 row-cols-xl-2 g-4 align-items-center">
           <div className="col">
             <div className="box">
               <MainHeading className="special">About Us</MainHeading>

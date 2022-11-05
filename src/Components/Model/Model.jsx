@@ -1,10 +1,8 @@
 import React from "react";
-import "./Model.scss";
 
 import about from "../../images/about-img.jpg";
 import video from "../../images/banner-video.mp4";
-
-import { BsFillTriangleFill } from "react-icons/bs";
+import ModelButton from "../ModelButton/ModelButton";
 
 const Model = () => {
   return (
@@ -13,15 +11,7 @@ const Model = () => {
         <img src={about} className="img-thumbnail" alt="img" />
       </div>
 
-      <button
-        type="button"
-        className="model-btn border-0 rounded-circle d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-        aria-label="toogle-model-bttton"
-      >
-        <BsFillTriangleFill className="text-white fs-5 ms-1" />
-      </button>
+      <ModelButton></ModelButton>
 
       {/* start model */}
       <div
