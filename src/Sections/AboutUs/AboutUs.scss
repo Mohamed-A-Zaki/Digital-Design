@@ -1,37 +1,11 @@
-@use "../../sass/variables" as *;
-
 .about-us {
-  background-image: url(../../images/about-bg.jpg);
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 40% 100%;
-  @media (max-width: 991px) {
-    background-image: none;
-  }
-  .model-btn {
-    width: 70px;
-    height: 70px;
-    background-color: $yellow-color;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-color: $yellow-color;
-      border-radius: 50%;
-      z-index: -1;
-      opacity: 1;
-      animation: btn_animation 1.5s 1s infinite;
-    }
-    svg {
-      transform: rotate(90deg);
-      transition: $main-transition;
-    }
-    &:hover {
-      box-shadow: 0 0 0 $yellow-color;
-      svg {
-        color: #000 !important;
-      }
+  &.bg-image {
+    background-image: url(../../images/about-bg.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 40% 100%;
+    @media (max-width: 991px) {
+      background-image: none;
     }
   }
 }
