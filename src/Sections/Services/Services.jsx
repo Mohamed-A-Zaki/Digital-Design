@@ -23,13 +23,15 @@ const Services = ({ heading, count }) => {
         )}
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-          {data.services.slice(0, count).map((service) => {
-            return (
-              <div className="col" key={service.id}>
-                <Service {...service}></Service>
-              </div>
-            );
-          })}
+          {data.services
+            .slice(0, count || data.services.length)
+            .map((service) => {
+              return (
+                <div className="col" key={service.id}>
+                  <Service {...service}></Service>
+                </div>
+              );
+            })}
         </div>
       </div>
     </section>
