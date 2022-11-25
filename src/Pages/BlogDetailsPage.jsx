@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Brands from "../Sections/Brands/Brands";
 import Breadcrumb from "../Sections/Breadcrumb/Breadcrumb";
+import Sidebar from "../Sections/Sidebar/Sidebar";
 
 import img from "../images/blog-bg.jpg";
 
@@ -23,6 +24,20 @@ const BlogDetailsPage = () => {
           Blog Detail
         </li>
       </Breadcrumb>
+
+      <section className="our-blog py-5">
+        <div className="container py-5">
+          <div className="row">
+            <div className="col-lg-8">
+              
+            </div>
+            <div className="col-lg-4">
+              <Sidebar></Sidebar>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Brands />
     </React.Fragment>
   );

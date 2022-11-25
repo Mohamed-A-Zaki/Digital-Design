@@ -49,15 +49,32 @@ const Footer = () => {
                   <h3 className="h1 mb-4">Digital Design</h3>
                   <div className="item my-3 d-flex gap-2">
                     <MdPhone className="fs-3 d-block" />
-                    <span>+123 4567 890</span>
+                    <a
+                      href="tel:123 4567 890"
+                      className="text-decoration-none text-white"
+                    >
+                      +123 4567 890
+                    </a>
                   </div>
                   <div className="item my-3 d-flex gap-2">
                     <MdEmail className="fs-3 d-block" />
-                    <span>info@email.com</span>
+                    <a
+                      href="mailto:info@email.com"
+                      className="text-decoration-none text-white"
+                    >
+                      info@email.com
+                    </a>
                   </div>
                   <div className="item my-3 d-flex gap-2">
                     <MdLocationPin className="fs-3 d-block" />
-                    <span>2363 Norma Avenue, Dayton, Ohio, 45406</span>
+                    <a
+                      href="https://goo.gl/maps/EbSuxNv9HdNieTHX7"
+                      className="text-decoration-none text-white"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      2363 Norma Avenue, Dayton, Ohio, 45406
+                    </a>
                   </div>
                 </div>
               </div>

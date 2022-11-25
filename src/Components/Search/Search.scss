@@ -1,0 +1,34 @@
+@use "../../sass/variables" as *;
+
+.search {
+  input {
+    &::placeholder {
+      transition: $main-transition;
+    }
+    &:focus::placeholder {
+      opacity: 0;
+    }
+  }
+
+  .icon {
+    background-color: $yellow-color;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 0;
+      background-color: $bootstrap-dark-color;
+      z-index: -1;
+      transition: $main-transition;
+    }
+    &:hover {
+      &::after {
+        height: 100%;
+      }
+    }
+  }
+}
