@@ -22,7 +22,7 @@ const ServicesPage = () => {
           Services
         </li>
       </Breadcrumb>
-      <Services heading={false} />
+      <Services />
       <GetTouch />
       <Pricing />
       <Testimonial />
