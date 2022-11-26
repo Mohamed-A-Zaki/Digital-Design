@@ -1,0 +1,17 @@
+@use "../../sass/variables" as *;
+
+.pagination {
+  .page-item {
+    .page-link {
+      &.number {
+        border: 1px solid $yellow-color !important;
+        transition: $main-transition;
+        &.active,
+        &:hover {
+          color: #fff !important;
+          background-color: $yellow-color !important;
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@ import Breadcrumb from "../Sections/Breadcrumb/Breadcrumb";
 import img from "../images/blog-bg.jpg";
 
 import data from "../json/data.json";
+import Pagination from "../Components/Pagination/Pagination";
 
 const BlogListPage = () => {
   useEffect(() => {
@@ -35,6 +36,8 @@ const BlogListPage = () => {
                   );
                 })}
               </div>
+
+              <Pagination></Pagination>
             </div>
 
             <div className="col-lg-4">
