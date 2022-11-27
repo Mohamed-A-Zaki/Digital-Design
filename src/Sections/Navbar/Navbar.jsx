@@ -65,12 +65,12 @@ const Navbar = () => {
         >
           {/* offcanvas-header */}
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
+            <h1 className="offcanvas-title h5" id="offcanvasNavbarLabel">
               Digital Design
-            </h5>
+            </h1>
             <button
               type="button"
-              className={`btn-close ${
+              className={`btn-close shadow-none ${
                 navbar_theme === "dark" && "btn-close-white"
               }`}
               data-bs-dismiss="offcanvas"

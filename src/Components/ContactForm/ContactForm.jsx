@@ -16,11 +16,13 @@ const ContactForm = () => {
           type="text"
           className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
           placeholder="First Name"
+          aria-label="First Name"
         />
         <input
           type="text"
           className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
           placeholder="Last Name"
+          aria-label="Last Name"
         />
       </div>
 
@@ -29,11 +31,13 @@ const ContactForm = () => {
           type="email"
           className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
           placeholder="Email Address"
+          aria-label="Email Address"
         />
         <input
           type="tel"
           className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
           placeholder="Phone Number"
+          aria-label="Phone Number"
         />
       </div>
 
@@ -41,6 +45,7 @@ const ContactForm = () => {
         <textarea
           className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
           placeholder="Message"
+          aria-label="Message"
         ></textarea>
       </div>
 
