@@ -2,14 +2,14 @@ import React from "react";
 import Tags from "../../Components/Tags/Tags";
 import Posts from "../../Components/Posts/Posts";
 import Search from "../../Components/Search/Search";
-import Categoties from "../../Components/Categoties/Categoties";
+import Categories from "../../Components/Categories/Categories";
 
 const Sidebar = () => {
   return (
     <div className="side-bar">
       <Search></Search>
       <Posts></Posts>
-      <Categoties></Categoties>
+      <Categories></Categories>
       <Tags></Tags>
     </div>
   );

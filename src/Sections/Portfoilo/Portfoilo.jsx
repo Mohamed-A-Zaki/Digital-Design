@@ -5,9 +5,9 @@ import { FaSearch } from "react-icons/fa";
 import Outline from "../../Components/Outline/Outline";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
+import ShuffleCategories from "../../Components/ShuffleCategories/ShuffleCategories";
 
 import data from "../../json/data.json";
-import Categories from "../../Components/Categories/Categories";
 
 const Portfoilo = () => {
   const [categories] = useState([
@@ -35,11 +35,11 @@ const Portfoilo = () => {
           <SectionHeading>See Our Recent Works</SectionHeading>
         </div>
 
-        <Categories
+        <ShuffleCategories
           category={category}
           categories={categories}
           handle_filtering={handle_filtering}
-        ></Categories>
+        ></ShuffleCategories>
 
         <div className="gallery mt-5">
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">

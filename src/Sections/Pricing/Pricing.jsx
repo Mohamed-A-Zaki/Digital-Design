@@ -3,10 +3,10 @@ import React, { useState } from "react";
 
 import Outline from "../../Components/Outline/Outline";
 import ButtonComp from "../../Components/Button/ButtonComp";
-import Categories from "../../Components/Categories/Categories";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import HeadingParagraph from "../../Components/HeadingParagraph/HeadingParagraph";
+import ShuffleCategories from "../../Components/ShuffleCategories/ShuffleCategories";
 
 import data from "../../json/data.json";
 
@@ -30,11 +30,11 @@ const Pricing = () => {
           </HeadingParagraph>
         </div>
 
-        <Categories
+        <ShuffleCategories
           category={category}
           categories={categories}
           handle_filtering={handle_filtering}
-        ></Categories>
+        ></ShuffleCategories>
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 text-center g-3 mt-2">
           {data.pricing.map((item) => {

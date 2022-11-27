@@ -1,23 +1,29 @@
-import React from "react";
 import "./Categories.scss";
+import React from "react";
+import MainHeading from "../MainHeading/MainHeading";
 
-const Categories = ({ categories, category, handle_filtering }) => {
+import data from "../../json/data.json";
+
+const Categories = () => {
   return (
-    <ul className="categories list-unstyled mb-0 d-flex m-auto border border-2 rounded">
-      {categories.map((cat, index) => {
-        return (
-          <li
-            key={index}
-            onClick={() => handle_filtering(cat)}
-            className={`text-uppercase px-3 px-lg-4 fw-semibold ${
-              cat === category ? "active" : ""
-            }`}
-          >
-            {cat}
-          </li>
-        );
-      })}
-    </ul>
+    <div className="categoties my-4">
+      <MainHeading className="special">Category</MainHeading>
+      <div className="categories_list">
+        {data.categories.map(({ id, name, count }) => {
+          return (
+            <div
+              className="category d-flex align-items-center justify-content-between p-2 my-2 rounded"
+              key={id}
+            >
+              <div className="name">{name}</div>
+              <div className="count rounded py-1 px-2">
+                {String(count).length === 1 ? `0${count}` : count}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
