@@ -11,11 +11,13 @@ const LeaveReply = () => {
           type="text"
           className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
           placeholder="Full Name"
+          aria-label="Full Name"
         />
         <input
           type="text"
           className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
           placeholder="Email Address"
+          aria-label="Email Address"
         />
       </div>
 
@@ -23,6 +25,7 @@ const LeaveReply = () => {
         <textarea
           className="flex-grow-1 bg-light py-2 px-3 border-0 border-secondary border-bottom border-3"
           placeholder="Message"
+          aria-label="Message"
         ></textarea>
       </div>
 

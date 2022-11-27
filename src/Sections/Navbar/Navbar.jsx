@@ -65,9 +65,9 @@ const Navbar = () => {
         >
           {/* offcanvas-header */}
           <div className="offcanvas-header">
-            <h1 className="offcanvas-title h5" id="offcanvasNavbarLabel">
+            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
               Digital Design
-            </h1>
+            </h5>
             <button
               type="button"
               className={`btn-close shadow-none ${
