@@ -18,7 +18,7 @@ import PortfolioDetailsPage from "./Pages/PortfolioDetailsPage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-hidden">
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <Routes>
