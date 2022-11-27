@@ -28,11 +28,11 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="details" element={<PortfolioDetailsPage />} />
-        <Route path="pricing" element={<PricingPage />} />
-        <Route path="blog-list" element={<BlogListPage />} />
-        <Route path="blog-details" element={<BlogDetailsPage />} />
-        <Route path="contact" element={<ContactPage />} />
+        <Route path="/details" element={<PortfolioDetailsPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/blog-list" element={<BlogListPage />} />
+        <Route path="/blog-details" element={<BlogDetailsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer></Footer>
     </div>

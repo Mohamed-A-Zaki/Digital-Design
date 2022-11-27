@@ -6,6 +6,10 @@ import Breadcrumb from "../Sections/Breadcrumb/Breadcrumb";
 import Sidebar from "../Sections/Sidebar/Sidebar";
 
 import img from "../images/blog-bg.jpg";
+import Comments from "./../Sections/Comments/Comments";
+import RelatedBlogs from "../Sections/RelatedBlogs/RelatedBlogs";
+import LeaveReply from "../Sections/LeaveReply/LeaveReply";
+import BlogDetails from "../Sections/BlogDetails/BlogDetails";
 
 const BlogDetailsPage = () => {
   useEffect(() => {
@@ -29,7 +33,10 @@ const BlogDetailsPage = () => {
         <div className="container py-5">
           <div className="row">
             <div className="col-lg-8">
-              
+              <BlogDetails></BlogDetails>
+              <RelatedBlogs></RelatedBlogs>
+              <Comments></Comments>
+              <LeaveReply></LeaveReply>
             </div>
             <div className="col-lg-4">
               <Sidebar></Sidebar>

@@ -378,5 +378,25 @@
       "day": "May 1, 2021",
       "desc": "It is a long established fact that a reader will be distracted"
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "name": "Johny Smith",
+      "img": "images/review-img1.jpg",
+      "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium explicabo."
+    },
+    {
+      "id": 2,
+      "name": "Rosy Kaira",
+      "img": "images/review-img2.jpg",
+      "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium explicabo."
+    },
+    {
+      "id": 3,
+      "name": "Kairal Doe",
+      "img": "images/review-img3.jpg",
+      "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium explicabo."
+    }
   ]
 }

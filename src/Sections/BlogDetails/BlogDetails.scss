@@ -1,0 +1,20 @@
+@use "../../sass/variables" as *;
+
+.blog-details {
+  .image {
+    img {
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  .blockquote {
+    border-color: $yellow-color !important;
+    svg {
+      top: 27px;
+      color: $yellow-color;
+    }
+  }
+  hr {
+    border-top: 1px dashed;
+  }
+}
