@@ -26,6 +26,7 @@
     width: fit-content;
     background-color: $dark-yellow-color;
     transition: $main-transition;
+    margin-inline-start: auto;
   }
   .desc {
     transform: translateY(3rem);

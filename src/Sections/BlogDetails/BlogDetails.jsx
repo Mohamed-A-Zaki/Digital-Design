@@ -77,14 +77,14 @@ const BlogDetails = () => {
 
       <div className="d-flex justify-content-between">
         <div className="tags">
-          <span className="title me-3">Tags : </span>
-          <span className="tag d-inline-block py-1 px-2 bg-light rounded my-2 me-3">
+          <span className="title">Tags : </span>
+          <span className="tag d-inline-block py-1 px-2 bg-light rounded my-2">
             web
           </span>
-          <span className="tag d-inline-block py-1 px-2 bg-light rounded my-2 me-3">
+          <span className="tag d-inline-block py-1 px-2 bg-light rounded my-2">
             Graphic
           </span>
-          <span className="tag d-inline-block py-1 px-2 bg-light rounded my-2 me-3">
+          <span className="tag d-inline-block py-1 px-2 bg-light rounded my-2">
             Brand
           </span>
         </div>

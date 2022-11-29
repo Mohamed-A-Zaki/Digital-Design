@@ -12,14 +12,14 @@
 
   .icon {
     background-color: $yellow-color;
+    inset-inline-end: 0;
     cursor: pointer;
     &::after {
       content: "";
       position: absolute;
       top: 50%;
-      left: 0;
+      inset-inline: 0;
       transform: translateY(-50%);
-      width: 100%;
       height: 0;
       background-color: $bootstrap-dark-color;
       z-index: -1;

@@ -1,3 +1,4 @@
+import "./GetTouch.scss";
 import React from "react";
 import ButtonComp from "../../Components/Button/ButtonComp";
 import Outline from "../../Components/Outline/Outline";
@@ -10,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const GetTouch = () => {
   let navigate = useNavigate();
   return (
-    <section className="get-in-touch py-5 bg-light position-relative text-center text-lg-start">
+    <section className="get-in-touch py-5 bg-light position-relative">
       <ContainerFluid>
         <Outline>
           <div className="container">

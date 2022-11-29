@@ -1,0 +1,16 @@
+@mixin center_transform() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin center_flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin square_ele($length) {
+  width: $length;
+  height: $length;
+}

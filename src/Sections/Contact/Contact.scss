@@ -1,0 +1,7 @@
+.contact-us {
+  .row {
+    [dir="rtl"] & {
+      flex-direction: row-reverse;
+    }
+  }
+}

@@ -20,7 +20,7 @@ const Tags = () => {
 
       <div className="tags_list mt-4">
         {tags_list.map((tag, index) => {
-          return <span key={index} className="tag d-inline-block py-1 px-2 bg-light rounded my-2 me-3">{tag}</span>;
+          return <span key={index} className="tag d-inline-block py-1 px-2 bg-light rounded my-2">{tag}</span>;
         })}
       </div>
     </div>

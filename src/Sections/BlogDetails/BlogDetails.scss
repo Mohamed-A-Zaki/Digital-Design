@@ -12,9 +12,17 @@
     svg {
       top: 27px;
       color: $yellow-color;
+      [dir="rtl"] & {
+        transform: rotateY(180deg);
+      }
     }
   }
   hr {
     border-top: 1px dashed;
+  }
+  .tags {
+    .title {
+      margin-inline-end: 1rem;
+    }
   }
 }

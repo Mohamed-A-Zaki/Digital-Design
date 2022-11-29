@@ -17,7 +17,7 @@ const Landing = () => {
     <section className="landing bg-dark pb-5 pt-3">
       <ContainerFluid className="w-auto">
         <Outline>
-          <div className="row flex-column-reverse flex-lg-row align-items-center text-center text-lg-start">
+          <div className="row flex-column-reverse flex-lg-row align-items-center text-center">
             <div className="col">
               <div className="image position-relative m-auto">
                 <img
@@ -27,17 +27,17 @@ const Landing = () => {
                 />
                 <img
                   src={chart}
-                  className="position-absolute bottom-0 end-0 mb-5 p-3 bg-light bg-opacity-25 rounded-3"
+                  className="position-absolute bottom-0 mb-5 p-3 bg-light bg-opacity-25 rounded-3"
                   alt="chart"
                 />
                 <img
                   src={client}
-                  className="position-absolute top-50 start-0 p-3 bg-light bg-opacity-25 rounded-3"
+                  className="position-absolute top-50 p-3 bg-light bg-opacity-25 rounded-3"
                   alt="client"
                 />
                 <img
                   src={experience}
-                  className="position-absolute top-0 end-0 my-5 p-4 bg-light bg-opacity-25 rounded-circle"
+                  className="position-absolute top-0 my-5 p-4 bg-light bg-opacity-25 rounded-circle"
                   alt="experience"
                 />
               </div>

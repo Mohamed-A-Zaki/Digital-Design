@@ -4,10 +4,10 @@
   background-color: $yellow-color;
   padding: 8px 10px;
   z-index: 1000;
-  right: -100px;
+  inset-inline-end: -100px;
   cursor: pointer;
   transition: $main-transition * 2;
   &.active {
-    right: 0;
+    inset-inline-end: 0;
   }
 }

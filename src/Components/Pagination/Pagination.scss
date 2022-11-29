@@ -13,5 +13,10 @@
         }
       }
     }
+    svg {
+      [dir="rtl"] & {
+        transform: rotate(180deg);
+      }
+    }
   }
 }

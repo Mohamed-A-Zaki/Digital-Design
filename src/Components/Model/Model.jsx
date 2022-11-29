@@ -29,7 +29,7 @@ const Model = () => {
               </h5>
               <button
                 type="button"
-                className="btn-close shadow-none"
+                className="btn-close m-0 shadow-none"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>

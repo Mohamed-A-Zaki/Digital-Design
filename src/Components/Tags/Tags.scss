@@ -2,6 +2,7 @@
 
 .tags {
   .tag {
+    margin-inline-end: 1rem;
     transition: $main-transition;
     cursor: pointer;
     &:hover {

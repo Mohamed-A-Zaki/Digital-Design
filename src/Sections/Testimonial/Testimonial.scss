@@ -1,10 +1,11 @@
 @use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
 
 .testimonial {
   .swiper {
     .swiper-slide {
       width: calc(100% - 100px) !important;
-      margin-right: 100px !important;
+      margin-inline-end: 100px !important;
       img {
         width: 70px;
       }
@@ -14,21 +15,17 @@
     }
     .swiper-button-prev,
     .swiper-button-next {
-      left: calc(100% - 75px);
-      width: 50px;
-      height: 50px;
+      @include square_ele(50px);
+      inset-inline-start: calc(100% - 75px);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
       border-radius: 50%;
       transform: translateY(50%);
       &::after {
+        @include square_ele(100%);
+        @include center_flex();
         background-color: #fff;
         color: #000;
-        width: 100%;
-        height: 100%;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-size: 25px;
         transition: $main-transition;
       }
@@ -65,27 +62,27 @@
       z-index: 1;
       &:nth-of-type(2) {
         top: 50px;
-        left: 50px;
+        inset-inline-start: 50px;
         animation-delay: 0s;
       }
       &:nth-of-type(3) {
         top: 0px;
-        left: calc(50% + 50px);
+        inset-inline-start: calc(50% + 50px);
         animation-delay: 0.5s;
       }
       &:nth-of-type(4) {
         top: calc(50% - 50px);
-        right: 0;
+        inset-inline-end: 0;
         animation-delay: 1s;
       }
       &:nth-of-type(5) {
         bottom: 0;
-        left: calc(50% + 30px);
+        inset-inline-start: calc(50% + 30px);
         animation-delay: 1.5s;
       }
       &:nth-of-type(6) {
-        left: 30px;
         top: calc(50% + 70px);
+        inset-inline-start: 30px;
         animation-delay: 2s;
       }
     }

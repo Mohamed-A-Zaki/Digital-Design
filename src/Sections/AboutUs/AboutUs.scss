@@ -1,11 +1,11 @@
 .about-us {
   &.bg-image {
-    background-image: url(../../images/about-bg.jpg);
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 40% 100%;
+    background: url(../../images/about-bg.jpg) no-repeat top right / 40% 100%;
     @media (max-width: 1200px) {
       background-image: none;
+    }
+    [dir="rtl"] & {
+      background-position: top left;
     }
   }
 }

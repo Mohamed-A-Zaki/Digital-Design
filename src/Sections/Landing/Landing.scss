@@ -1,6 +1,11 @@
 @use "../../sass/variables" as *;
 
 .landing {
+  .row {
+    @media (min-width: 992px) {
+      text-align: start !important;
+    }
+  }
   .image {
     width: fit-content;
     .banner {
@@ -9,12 +14,15 @@
     img:not(:first-of-type) {
       animation: img-animation 4s linear infinite alternate;
       &:nth-of-type(2) {
+        inset-inline-end: 0;
         animation-delay: 0s;
       }
       &:nth-of-type(3) {
+        inset-inline-start: 0;
         animation-delay: 0.5s;
       }
       &:nth-of-type(4) {
+        inset-inline-end: 0;
         animation-delay: 1s;
       }
     }

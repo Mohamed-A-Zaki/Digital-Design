@@ -11,7 +11,7 @@ const BlogItem = ({ img, day, desc, className }) => {
       style={{ backgroundImage: `url(${img})` }}
     >
       <Outline className="p-2 h-100 d-flex flex-column justify-content-between overflow-hidden">
-        <div className="day py-1 px-3 ms-auto rounded">{day}</div>
+        <div className="day py-1 px-3 rounded">{day}</div>
         <div className="desc">
           <p className="h5 fw-bold m-0">{desc}</p>
           <div className="read-more py-1 px-3 rounded mt-3">Read More</div>

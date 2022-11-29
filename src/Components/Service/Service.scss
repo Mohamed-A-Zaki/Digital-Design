@@ -4,6 +4,7 @@
   transition: $main-transition;
   img {
     width: 140px;
+    inset-inline-end: 0;
   }
   .outline {
     border-color: transparent;

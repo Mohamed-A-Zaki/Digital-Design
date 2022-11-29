@@ -30,7 +30,7 @@ const Portfoilo = () => {
   return (
     <section className="portfoilo py-5">
       <div className="container">
-        <div className="heading text-center ">
+        <div className="heading text-center">
           <MainHeading>Portfoilo</MainHeading>
           <SectionHeading>See Our Recent Works</SectionHeading>
         </div>

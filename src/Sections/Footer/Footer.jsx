@@ -31,7 +31,7 @@ const Footer = () => {
                 />
                 <ButtonComp
                   type="submit"
-                  className="main-btn position-absolute end-0 top-50 translate-middle-y me-2 mt-3 mt-xl-0"
+                  className="main-btn position-absolute top-50 translate-middle-y mx-2 mt-3 mt-xl-0"
                 >
                   Subscribe Now
                 </ButtonComp>
@@ -43,7 +43,6 @@ const Footer = () => {
 
             {/* start row */}
             <div className="row g-4">
-              {/* row-cols-1 row-cols-md-2 row-cols-lg-4 */}
               <div className="col-md-6 col-xl-3">
                 <div className="box">
                   <h3 className="h1 mb-4">Digital Design</h3>
@@ -85,7 +84,7 @@ const Footer = () => {
                     Our Links
                   </MainHeading>
                   <div className="d-flex gap-5 my-3">
-                    <ul className="list-unstyled mb-0">
+                    <ul className="list-unstyled mb-0 p-0">
                       <li className="my-3">
                         <Link
                           to="/"
@@ -120,7 +119,7 @@ const Footer = () => {
                       </li>
                     </ul>
 
-                    <ul className="list-unstyled mb-0">
+                    <ul className="list-unstyled mb-0 p-0">
                       <li className="my-3">
                         <Link
                           to="/"
@@ -163,7 +162,7 @@ const Footer = () => {
                   <MainHeading className="special dark-border">
                     Our Services
                   </MainHeading>
-                  <ul className="list-unstyled mb-0 my-3">
+                  <ul className="list-unstyled mb-0 p-0 my-3">
                     <li className="my-3">
                       <Link to="/" className="text-decoration-none link-light">
                         Graphic Design

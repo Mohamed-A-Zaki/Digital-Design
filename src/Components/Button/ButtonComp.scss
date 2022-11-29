@@ -6,8 +6,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 0;
-    width: 100%;
+    inset-inline: 0;
     transform: translateY(-50%);
     height: 0;
     z-index: -1;
