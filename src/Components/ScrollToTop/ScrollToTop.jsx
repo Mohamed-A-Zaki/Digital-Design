@@ -12,7 +12,7 @@ const ScrollToTop = () => {
 
   return (
     <div
-      className={`scroll-to-top position-fixed fs-3 bottom-0 rounded text-white m-4 ${
+      className={`scroll-to-top position-fixed bottom-0 rounded text-white m-4 ${
         show ? "active" : ""
       }`}
       onClick={() => window.scrollTo({ top: 0 })}
