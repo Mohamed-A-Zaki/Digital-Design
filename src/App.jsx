@@ -1,5 +1,6 @@
 import "./App.scss";
 
+import { useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
 import HomePage from "./Pages/HomePage";
@@ -17,8 +18,10 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import PortfolioDetailsPage from "./Pages/PortfolioDetailsPage";
 
 function App() {
+  const [lang] = useState("en");
+
   return (
-    <div className="App overflow-hidden">
+    <div className="App overflow-hidden" dir={lang === "ar" ? "rtl" : "ltr"}>
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <Routes>
