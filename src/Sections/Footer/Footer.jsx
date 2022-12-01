@@ -95,7 +95,7 @@ const Footer = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          to="/"
+                          to="/about"
                           className="text-decoration-none link-light"
                         >
                           About Us
@@ -103,7 +103,7 @@ const Footer = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          to="/"
+                          to="/services"
                           className="text-decoration-none link-light"
                         >
                           Services
@@ -111,7 +111,7 @@ const Footer = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          to="/"
+                          to="/portfolio"
                           className="text-decoration-none link-light"
                         >
                           Portfolio
@@ -122,7 +122,7 @@ const Footer = () => {
                     <ul className="list-unstyled mb-0 p-0">
                       <li className="my-3">
                         <Link
-                          to="/"
+                          to="/team"
                           className="text-decoration-none link-light"
                         >
                           Team
@@ -130,7 +130,7 @@ const Footer = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          to="/"
+                          to="/pricing"
                           className="text-decoration-none link-light"
                         >
                           Pricing
@@ -138,7 +138,7 @@ const Footer = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          to="/"
+                          to="/blog-list"
                           className="text-decoration-none link-light"
                         >
                           Blog
@@ -146,7 +146,7 @@ const Footer = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          to="/"
+                          to="/contact"
                           className="text-decoration-none link-light"
                         >
                           Contact Us
@@ -164,32 +164,32 @@ const Footer = () => {
                   </MainHeading>
                   <ul className="list-unstyled mb-0 p-0 my-3">
                     <li className="my-3">
-                      <Link to="/" className="text-decoration-none link-light">
+                      <Link to="#" className="text-decoration-none link-light">
                         Graphic Design
                       </Link>
                     </li>
                     <li className="my-3">
-                      <Link to="/" className="text-decoration-none link-light">
+                      <Link to="#" className="text-decoration-none link-light">
                         Web Design
                       </Link>
                     </li>
                     <li className="my-3">
-                      <Link to="/" className="text-decoration-none link-light">
+                      <Link to="#" className="text-decoration-none link-light">
                         Web Development
                       </Link>
                     </li>
                     <li className="my-3">
-                      <Link to="/" className="text-decoration-none link-light">
+                      <Link to="#" className="text-decoration-none link-light">
                         UI / UX
                       </Link>
                     </li>
                     <li className="my-3">
-                      <Link to="/" className="text-decoration-none link-light">
+                      <Link to="#" className="text-decoration-none link-light">
                         SEO Marketing
                       </Link>
                     </li>
                     <li className="my-3">
-                      <Link to="/" className="text-decoration-none link-light">
+                      <Link to="#" className="text-decoration-none link-light">
                         Mobile App
                       </Link>
                     </li>
