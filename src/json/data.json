@@ -67,22 +67,22 @@
   "statistics": [
     {
       "id": 1,
-      "count": "120+",
+      "count": 120,
       "text": "Complete Projects"
     },
     {
       "id": 2,
-      "count": "100+",
+      "count": 100,
       "text": "Happy Clients"
     },
     {
       "id": 3,
-      "count": "93+",
+      "count": 93,
       "text": "Cup Of Tea"
     },
     {
       "id": 4,
-      "count": "137+",
+      "count": 137,
       "text": "Skill Services"
     }
   ],

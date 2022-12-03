@@ -1,6 +1,6 @@
 import "./WhyUs.scss";
-
 import React from "react";
+import Statistic from "../../Components/Statistic/Statistic";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
@@ -14,16 +14,8 @@ const WhyUs = () => {
           <div className="col">
             <div className="box">
               <div className="statistics d-grid gap-5 position-relative">
-                {data.statistics.map(({ id, count, text }) => {
-                  return (
-                    <div
-                      key={id}
-                      className="item bg-white shadow p-4 text-center rounded"
-                    >
-                      <span className="number display-4 fw-bold">{count}</span>
-                      <div className="text-muted">{text}</div>
-                    </div>
-                  );
+                {data.statistics.map((stat) => {
+                  return <Statistic key={stat.id} {...stat}></Statistic>;
                 })}
               </div>
             </div>
