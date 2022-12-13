@@ -1,14 +1,15 @@
 import "./Navbar.scss";
 
 import React, { useEffect, useState } from "react";
-import ButtonComp from "../../Components/Button/ButtonComp";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import { FaBars } from "react-icons/fa";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import ButtonComp from "../../Components/Button/ButtonComp";
 
 const Navbar = () => {
   const [navbar_theme, setNavbar_theme] = useState("dark");
-  let navigate = useNavigate();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -88,7 +89,7 @@ const Navbar = () => {
                     navbar_theme === "dark" ? "text-white" : "text-dark"
                   }`}
                   aria-current="page"
-                  to="home"
+                  to="/"
                 >
                   Home
                 </NavLink>
@@ -122,6 +123,13 @@ const Navbar = () => {
                 <Link
                   className={`nav-link fw-semibold px-0 dropdown-toggle ${
                     navbar_theme === "dark" ? "text-white" : "text-dark"
+                  } ${
+                    location.pathname === "/portfolio" ||
+                    location.pathname === "/details" ||
+                    location.pathname === "/pricing" ||
+                    location.pathname === "/team"
+                      ? "active"
+                      : ""
                   }`}
                   to="#"
                   role="button"
@@ -172,6 +180,12 @@ const Navbar = () => {
                 <Link
                   className={`nav-link fw-semibold px-0 dropdown-toggle ${
                     navbar_theme === "dark" ? "text-white" : "text-dark"
+                  } 
+                  ${
+                    location.pathname === "/blog-list" ||
+                    location.pathname === "/blog-details"
+                      ? "active"
+                      : ""
                   }`}
                   to="#"
                   role="button"
