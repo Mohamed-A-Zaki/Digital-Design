@@ -1,0 +1,9 @@
+.get-in-touch {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .get-in-touch {
+    text-align: start;
+  }
+}

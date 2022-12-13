@@ -52,14 +52,14 @@ const BlogDetails = () => {
           <div className="col">
             <img
               src="images/recent-img1.jpg"
-              className="img-fluid rounded shadow"
+              className="img-fluid w-100 rounded shadow"
               alt="blog-details"
             />
           </div>
           <div className="col">
             <img
               src="images/blog-img3.jpg"
-              className="img-fluid rounded shadow"
+              className="img-fluid w-100 rounded shadow"
               alt="blog-details"
             />
           </div>
