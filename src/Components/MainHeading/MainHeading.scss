@@ -16,12 +16,10 @@
     bottom: 0;
     width: 100px;
     height: 2px;
-    // left: 50%;
     inset-inline-start: 50%;
   }
   &::before {
     bottom: -7px;
-    // left: 50%;
     inset-inline-start: 50%;
     width: 16px;
     height: 16px;
@@ -31,13 +29,11 @@
   }
   &.special {
     &::after {
-      // left: 0;
       inset-inline-start: 0;
       width: 40px;
       transform: translateX(0);
     }
     &::before {
-      // left: 4px;
       inset-inline-start: 4px;
     }
   }
