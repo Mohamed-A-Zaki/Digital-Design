@@ -14,7 +14,7 @@ const Pricing = () => {
   const [categories] = useState<string[]>(Object.keys(data.pricing[0].price));
   const [category, setCategory] = useState<string>(categories[0]);
 
-  function handle_filtering(cat : string) {
+  function handle_filtering(cat: string) {
     setCategory(cat);
   }
 
@@ -37,27 +37,27 @@ const Pricing = () => {
         ></ShuffleCategories>
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 text-center g-3 mt-2">
-          {data.pricing.map((item) => {
+          {data.pricing.map(({ id, price, plan, features }) => {
             return (
-              <div className="col" key={item.id}>
+              <div className="col" key={id}>
                 <div className="item shadow rounded p-3">
                   <Outline className="p-4">
-                    <div className="plane-name h3 fw-bold">{item.plan}</div>
+                    <div className="plane-name h3 fw-bold">{plan}</div>
                     <div className="price display-4 fw-bold my-4">
-                      ${item.price[category]}
+                      ${category === "monthly" ? price.monthly : price.yearly}
                     </div>
 
                     <hr className="w-75 m-auto border-top border-2 border-dark" />
 
                     <ul className="list-unstyled my-4">
-                      {item.features["active"].map((item, index) => {
+                      {features["active"].map((item, index) => {
                         return (
                           <li key={index} className="fw-bold py-1">
                             {item}
                           </li>
                         );
                       })}
-                      {item.features["not-active"].map((item, index) => {
+                      {features["not-active"].map((item, index) => {
                         return (
                           <li key={index} className="fw-bold py-1 text-muted">
                             {item}
