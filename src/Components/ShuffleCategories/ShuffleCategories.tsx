@@ -1,5 +1,4 @@
 import "./ShuffleCategories.scss";
-import React from "react";
 
 type Props = {
   categories: string[];

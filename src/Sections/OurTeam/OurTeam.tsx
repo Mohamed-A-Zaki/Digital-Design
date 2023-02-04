@@ -1,16 +1,14 @@
 import "./OurTeam.scss";
-import React from "react";
-
-import SectionHeading from "../../Components/SectionHeading/SectionHeading";
-import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
-import MainHeading from "../../Components/MainHeading/MainHeading";
-import TeamMember from "../../Components/TeamMember/TeamMember";
-import Outline from "../../Components/Outline/Outline";
+import data from "../../json/data.json";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 
-import data from "../../json/data.json";
+import Outline from "../../Components/Outline/Outline";
+import TeamMember from "../../Components/TeamMember/TeamMember";
+import MainHeading from "../../Components/MainHeading/MainHeading";
+import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 
 const OurTeam = () => {
   return (

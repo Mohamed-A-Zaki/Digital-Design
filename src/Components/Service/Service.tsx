@@ -1,5 +1,4 @@
 import "./Service.scss";
-import React from "react";
 import { Link } from "react-router-dom";
 import Outline from "../Outline/Outline";
 

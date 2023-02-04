@@ -1,6 +1,4 @@
 import "./Landing.scss";
-import React from "react";
-
 import { useNavigate } from "react-router-dom";
 
 import Outline from "../../Components/Outline/Outline";
@@ -28,17 +26,17 @@ const Landing = () => {
                 />
                 <img
                   src={chart}
-                  className="position-absolute bottom-0 mb-5 p-3 bg-light bg-opacity-25 rounded-3"
+                  className="position-absolute bottom-0 mb-5 p-3 bg-light bg-opacity-25 rounded-3 d-none d-xl-block"
                   alt="chart"
                 />
                 <img
                   src={client}
-                  className="position-absolute top-50 p-3 bg-light bg-opacity-25 rounded-3"
+                  className="position-absolute top-50 p-3 bg-light bg-opacity-25 rounded-3 d-none d-xl-block"
                   alt="client"
                 />
                 <img
                   src={experience}
-                  className="position-absolute top-0 my-5 p-4 bg-light bg-opacity-25 rounded-circle"
+                  className="position-absolute top-0 my-5 p-4 bg-light bg-opacity-25 rounded-circle d-none d-xl-block"
                   alt="experience"
                 />
               </div>

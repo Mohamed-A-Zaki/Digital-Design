@@ -1,23 +1,21 @@
 import "./Navbar.scss";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import { FaBars } from "react-icons/fa";
 import ButtonComp from "../../Components/Button/ButtonComp";
 
 const Navbar = () => {
-  const [navbar_theme, setNavbar_theme] = useState("dark");
+  const [navbar_theme, setNavbar_theme] = useState<"light" | "dark">("dark");
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY >= 100) {
-        setNavbar_theme("light");
-      } else {
-        setNavbar_theme("dark");
-      }
+      window.scrollY >= 100
+        ? setNavbar_theme("light")
+        : setNavbar_theme("dark");
     });
   }, []);
 

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Outline.scss";
 
 type Props = {

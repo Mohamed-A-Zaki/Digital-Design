@@ -1,6 +1,5 @@
 import "./AboutUs.scss";
 
-import React from "react";
 import Model from "../../Components/Model/Model";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";

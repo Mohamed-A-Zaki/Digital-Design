@@ -1,11 +1,9 @@
-import React from "react";
+import data from "../../json/data.json";
 
 import Service from "../../Components/Service/Service";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import HeadingParagraph from "../../Components/HeadingParagraph/HeadingParagraph";
-
-import data from "../../json/data.json";
 
 type Props = {
   heading: boolean;

@@ -1,7 +1,5 @@
-import React from "react";
-import BlogItem from "../../Components/BlogItem/BlogItem";
-
 import data from "../../json/data.json";
+import BlogItem from "../../Components/BlogItem/BlogItem";
 
 const RelatedBlogs = () => {
   let random: number = Math.floor(Math.random() * (data.blog.length - 1));

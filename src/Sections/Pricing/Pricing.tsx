@@ -1,5 +1,6 @@
 import "./Pricing.scss";
-import React, { useState } from "react";
+import { useState } from "react";
+import data from "../../json/data.json";
 
 import Outline from "../../Components/Outline/Outline";
 import ButtonComp from "../../Components/Button/ButtonComp";
@@ -7,8 +8,6 @@ import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import HeadingParagraph from "../../Components/HeadingParagraph/HeadingParagraph";
 import ShuffleCategories from "../../Components/ShuffleCategories/ShuffleCategories";
-
-import data from "../../json/data.json";
 
 const Pricing = () => {
   const [categories] = useState<string[]>(Object.keys(data.pricing[0].price));

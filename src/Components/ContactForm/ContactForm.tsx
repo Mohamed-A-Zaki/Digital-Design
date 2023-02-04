@@ -1,6 +1,5 @@
 import "./ContactForm.scss";
 
-import React from "react";
 import ButtonComp from "../Button/ButtonComp";
 import MainHeading from "../MainHeading/MainHeading";
 import SectionHeading from "../SectionHeading/SectionHeading";

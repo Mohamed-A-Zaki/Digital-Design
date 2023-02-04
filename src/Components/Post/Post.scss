@@ -1,0 +1,18 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+.post {
+  img {
+    @include square_ele(100px);
+    object-fit: cover;
+  }
+  .title {
+    transition: $main-transition;
+    &:hover {
+      color: $yellow-color !important;
+    }
+  }
+  .date {
+    color: $yellow-color;
+  }
+}

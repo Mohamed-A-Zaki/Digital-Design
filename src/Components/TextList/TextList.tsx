@@ -1,6 +1,4 @@
-import React from "react";
 import "./TextList.scss";
-
 import { BsCheckLg } from "react-icons/bs";
 
 const TextList = () => {

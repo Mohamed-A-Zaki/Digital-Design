@@ -1,6 +1,4 @@
-import React from "react";
 import "./PortfolioDetails.scss";
-
 import data from "../../json/data.json";
 import img from "../../images/portfolio-detail-img.png";
 

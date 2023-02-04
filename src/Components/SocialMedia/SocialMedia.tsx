@@ -1,8 +1,5 @@
 import "./SocialMedia.scss";
-
-import React from "react";
 import { Link } from "react-router-dom";
-
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const SocialMedia = () => {

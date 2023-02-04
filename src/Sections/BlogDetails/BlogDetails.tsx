@@ -1,5 +1,4 @@
 import "./BlogDetails.scss";
-import React from "react";
 
 import TextList from "../../Components/TextList/TextList";
 import ModelButton from "../../Components/ModelButton/ModelButton";

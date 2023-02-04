@@ -1,4 +1,3 @@
-import React from "react";
 import Tags from "../../Components/Tags/Tags";
 import Posts from "../../Components/Posts/Posts";
 import Search from "../../Components/Search/Search";

@@ -1,4 +1,3 @@
-import React from "react";
 import ButtonComp from "../../Components/Button/ButtonComp";
 
 const LeaveReply = () => {

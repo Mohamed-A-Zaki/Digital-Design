@@ -1,6 +1,4 @@
 import "./ContactLinks.scss";
-import React from "react";
-
 import Outline from "../../Components/Outline/Outline";
 
 import { FaPhoneAlt } from "react-icons/fa";

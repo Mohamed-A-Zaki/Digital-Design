@@ -1,14 +1,11 @@
 import "./GetTouch.scss";
-import React from "react";
-
 import { useNavigate } from "react-router-dom";
+import image from "../../images/get-in-touch.png";
 
 import ButtonComp from "../../Components/Button/ButtonComp";
 import Outline from "../../Components/Outline/Outline";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
-
-import image from "../../images/get-in-touch.png";
 
 const GetTouch = () => {
   let navigate = useNavigate();

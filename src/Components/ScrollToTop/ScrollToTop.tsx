@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import "./ScrollToTop.scss";
-
+import { useState } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
 
 const ScrollToTop = () => {

@@ -1,15 +1,13 @@
 import "./Testimonial.scss";
-
-import React from "react";
-import MainHeading from "../../Components/MainHeading/MainHeading";
-import SectionHeading from "../../Components/SectionHeading/SectionHeading";
-
-import testimonial_image from "../../images/testimonial-img1.jpg";
+import data from "../../json/data.json";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 
-import data from "../../json/data.json";
+import MainHeading from "../../Components/MainHeading/MainHeading";
+import SectionHeading from "../../Components/SectionHeading/SectionHeading";
+
+import testimonial_image from "../../images/testimonial-img1.jpg";
 
 const Testimonial = () => {
   return (

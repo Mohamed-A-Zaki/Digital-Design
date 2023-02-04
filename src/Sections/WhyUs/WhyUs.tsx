@@ -1,10 +1,9 @@
 import "./WhyUs.scss";
-import React from "react";
+import data from "../../json/data.json";
+
 import Statistic from "../../Components/Statistic/Statistic";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
-
-import data from "../../json/data.json";
 
 const WhyUs = () => {
   return (

@@ -1,5 +1,3 @@
-import React from "react";
-
 import Model from "../../Components/Model/Model";
 import TextList from "../../Components/TextList/TextList";
 import MainHeading from "../../Components/MainHeading/MainHeading";

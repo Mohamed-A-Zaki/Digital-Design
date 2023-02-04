@@ -1,6 +1,4 @@
-import React from "react";
 import "./ModelButton.scss";
-
 import { BsFillTriangleFill } from "react-icons/bs";
 
 const ModelButton = () => {

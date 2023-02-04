@@ -1,4 +1,3 @@
-import React from "react";
 import BlogItem from "../../Components/BlogItem/BlogItem";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
@@ -30,14 +29,10 @@ const Blog = () => {
 
         <div className="row row-cols-1 row-cols-xl-2 g-3">
           <div className="col">
-            <div className="row g-3">
-              {get_sub_list(0, data.blog.length / 2)}
-            </div>
+            <div className="row g-3">{get_sub_list(0, 3)}</div>
           </div>
           <div className="col">
-            <div className="row g-3">
-              {get_sub_list(data.blog.length / 2, data.blog.length)}
-            </div>
+            <div className="row g-3">{get_sub_list(3, 6)}</div>
           </div>
         </div>
       </div>

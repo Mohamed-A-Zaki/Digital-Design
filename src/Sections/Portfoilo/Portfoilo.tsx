@@ -1,13 +1,13 @@
 import "./Portfoilo.scss";
-import React, { useState } from "react";
+import data from "../../json/data.json";
+
+import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
 import Outline from "../../Components/Outline/Outline";
 import MainHeading from "../../Components/MainHeading/MainHeading";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import ShuffleCategories from "../../Components/ShuffleCategories/ShuffleCategories";
-
-import data from "../../json/data.json";
 
 type CatItem = {
   id: number;

@@ -1,5 +1,4 @@
 import "./TeamMember.scss";
-import React from "react";
 import Outline from "../Outline/Outline";
 import SocialMedia from "../SocialMedia/SocialMedia";
 

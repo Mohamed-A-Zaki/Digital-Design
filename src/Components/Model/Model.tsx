@@ -1,5 +1,3 @@
-import React from "react";
-
 import ModelButton from "../ModelButton/ModelButton";
 
 import about from "../../images/about-img.jpg";

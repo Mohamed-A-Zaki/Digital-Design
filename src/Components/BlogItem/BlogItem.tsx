@@ -1,4 +1,3 @@
-import React from "react";
 import "./BlogItem.scss";
 import Outline from "../Outline/Outline";
 

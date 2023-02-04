@@ -1,7 +1,6 @@
 import "./Search.scss";
-import React from "react";
-import MainHeading from "../MainHeading/MainHeading";
 import { BiSearch } from "react-icons/bi";
+import MainHeading from "../MainHeading/MainHeading";
 
 const Search = () => {
   return (
