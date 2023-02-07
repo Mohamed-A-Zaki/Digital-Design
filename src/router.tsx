@@ -1,18 +1,7 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 
 import App from "./App";
 import React from "react";
-
-// import HomePage from "./Pages/HomePage";
-// import AboutPage from "./Pages/AboutPage";
-// import ServicesPage from "./Pages/ServicesPage";
-// import TeamPage from "./Pages/TeamPage";
-// import PortfolioPage from "./Pages/PortfolioPage";
-// import PortfolioDetailsPage from "./Pages/PortfolioDetailsPage";
-// import PricingPage from "./Pages/PricingPage";
-// import BlogListPage from "./Pages/BlogListPage";
-// import BlogDetailsPage from "./Pages/BlogDetailsPage";
-// import ContactPage from "./Pages/ContactPage";
 
 const HomePage = React.lazy(() => import("./Pages/HomePage"));
 const AboutPage = React.lazy(() => import("./Pages/AboutPage"));
@@ -27,7 +16,7 @@ const PortfolioDetailsPage = React.lazy(
   () => import("./Pages/PortfolioDetailsPage")
 );
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
