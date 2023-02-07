@@ -4,7 +4,7 @@ import MainHeading from "../MainHeading/MainHeading";
 
 const Tags = () => {
   return (
-    <div className="tags">
+    <div className="tags my-5">
       <MainHeading className="special">Tags</MainHeading>
 
       <div className="tags_list mt-4">

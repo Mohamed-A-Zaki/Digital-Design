@@ -1,12 +1,13 @@
 import "./App.scss";
 
-import React, { Suspense, useState } from "react";
+import { Suspense, useState } from "react";
 import { Outlet } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 import Navbar from "./Sections/Navbar/Navbar";
 import Footer from "./Sections/Footer/Footer";
-import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import Loading from "./Components/Loading/Loading";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 type Language = "en" | "ar";
 
@@ -15,14 +16,15 @@ function App() {
 
   return (
     <div className="App" dir={lang === "ar" ? "rtl" : "ltr"}>
-      <ScrollToTop></ScrollToTop>
-      <Navbar></Navbar>
+      <ScrollToTop />
+      <ToastContainer position="top-right" theme="dark" />
+      <Navbar />
 
       <Suspense fallback={<Loading />}>
         <Outlet />
       </Suspense>
 
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }

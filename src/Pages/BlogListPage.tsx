@@ -24,7 +24,7 @@ const BlogListPage = () => {
 
       <section className="our-blog py-5">
         <div className="container py-5">
-          <div className="row g-4">
+          <div className="row g-5 g-lg-4">
             <div className="col-lg-8">
               <div className="row row-cols-1 row-cols-xl-2 g-4">
                 {data.blog.map((blog_item) => {
@@ -35,7 +35,6 @@ const BlogListPage = () => {
                   );
                 })}
               </div>
-
               <Pagination></Pagination>
             </div>
 

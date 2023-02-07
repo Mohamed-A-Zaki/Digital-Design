@@ -17,7 +17,7 @@ footer {
       inset-inline-end: 0;
       @media (max-width: 1199px) {
         position: static !important;
-        transform: translate(0) !important;
+        transform: translate(0, 50%) !important;
       }
     }
   }

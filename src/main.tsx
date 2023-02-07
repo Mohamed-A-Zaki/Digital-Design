@@ -1,8 +1,6 @@
 import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import reportWebVitals from "./reportWebVitals";
-// import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 // react-router-dom
 import router from "./router";
@@ -16,6 +14,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
+// import react-toastify
+import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

@@ -4,7 +4,7 @@ import MainHeading from "../MainHeading/MainHeading";
 
 const Categories = () => {
   return (
-    <div className="categories my-4 w-100">
+    <div className="categories my-5 w-100">
       <MainHeading className="special">Category</MainHeading>
       <div className="categories_list">
         {data.categories.map((cat) => {

@@ -31,7 +31,7 @@ const BlogDetailsPage = () => {
 
       <section className="our-blog py-5">
         <div className="container py-5">
-          <div className="row">
+          <div className="row g-5 g-lg-4">
             <div className="col-lg-8">
               <BlogDetails></BlogDetails>
               <RelatedBlogs></RelatedBlogs>

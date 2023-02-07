@@ -5,7 +5,7 @@ import data from "../../json/data.json";
 
 const Posts = () => {
   return (
-    <div className="posts my-4">
+    <div className="posts my-5">
       <MainHeading className="special">Recent Post</MainHeading>
       <div className="posts_list">
         {data.posts.map((post) => {

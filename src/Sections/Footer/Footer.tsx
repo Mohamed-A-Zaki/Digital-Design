@@ -1,4 +1,9 @@
 import "./Footer.scss";
+
+import * as yup from "yup";
+import { useFormik } from "formik";
+import { toast } from "react-toastify";
+
 import { Link } from "react-router-dom";
 import { MdPhone, MdEmail, MdLocationPin } from "react-icons/md";
 
@@ -10,23 +15,46 @@ import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
 
 const Footer = () => {
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+    },
+    validationSchema: yup.object({
+      email: yup.string().email().required(),
+    }),
+    onSubmit: () => {
+      toast.success("Success Notification !");
+    },
+  });
+
   return (
     <footer className="bg-dark pt-5 text-white">
       <ContainerFluid>
         <Outline>
           <div className="container py-5">
             {/* start form */}
-            <form className="text-center">
+            <form
+              className="text-center"
+              onSubmit={formik.handleSubmit}
+              noValidate
+            >
               <MainHeading className="dark-border">Newsletter</MainHeading>
               <SectionHeading>Let's Stay In Touch</SectionHeading>
               <div className="input-div position-relative w-50 m-auto">
                 <input
                   type="email"
-                  name="email"
                   aria-label="form-email"
                   placeholder="Enter Email Address..."
-                  className="form-control p-3 border-0 shadow-none"
+                  className={`form-control p-3 border-0 shadow-none ${
+                    formik.errors.email && formik.touched.email
+                      ? "is-invalid"
+                      : ""
+                  }`}
+                  {...formik.getFieldProps("email")}
                 />
+                <div className="invalid-feedback position-absolute">
+                  {formik.errors.email}
+                </div>
                 <ButtonComp
                   type="submit"
                   className="main-btn position-absolute top-50 translate-middle-y mx-2 mt-3 mt-xl-0"
