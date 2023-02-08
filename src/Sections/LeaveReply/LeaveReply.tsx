@@ -9,23 +9,23 @@ type Values = {
   message: string;
 };
 
-const initialValues: Values = {
-  fullName: "",
-  email: "",
-  message: "",
-};
-
-const validationSchema = yup.object({
-  fullName: yup.string().required(),
-  email: yup.string().email().required(),
-  message: yup.string().required(),
-});
-
-const onSubmit = () => {
-  toast.success("Success Notification !");
-};
-
 const LeaveReply = () => {
+  const initialValues: Values = {
+    fullName: "",
+    email: "",
+    message: "",
+  };
+
+  const validationSchema = yup.object({
+    fullName: yup.string().required(),
+    email: yup.string().email().required(),
+    message: yup.string().required(),
+  });
+
+  const onSubmit = () => {
+    toast.success("Success Notification !");
+  };
+
   return (
     <Formik
       initialValues={initialValues}

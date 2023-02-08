@@ -14,7 +14,23 @@ import SocialMedia from "../../Components/SocialMedia/SocialMedia";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
 
+type Values = {
+  email: string;
+};
+
 const Footer = () => {
+  const initialValues: Values = {
+    email: "",
+  };
+
+  const validationSchema = yup.object({
+    email: yup.string().email().required(),
+  });
+
+  const onSubmit = () => {
+    toast.success("Success Notification !");
+  };
+
   return (
     <footer className="bg-dark pt-5 text-white">
       <ContainerFluid>
@@ -22,18 +38,15 @@ const Footer = () => {
           <div className="container py-5">
             {/* start form */}
             <Formik
-              initialValues={{ email: "" }}
-              validationSchema={yup.object({
-                email: yup.string().email().required(),
-              })}
-              onSubmit={() => {
-                toast.success("Success Notification !");
-              }}
+              initialValues={initialValues}
+              validationSchema={validationSchema}
+              onSubmit={onSubmit}
             >
               {({ errors, touched }) => (
                 <Form className="text-center" noValidate>
                   <MainHeading className="dark-border">Newsletter</MainHeading>
                   <SectionHeading>Let's Stay In Touch</SectionHeading>
+
                   <div className="input-div position-relative w-50 m-auto">
                     <Field
                       type="email"

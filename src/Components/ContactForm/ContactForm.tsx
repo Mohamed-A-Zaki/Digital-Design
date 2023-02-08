@@ -14,27 +14,27 @@ type Values = {
   message: string;
 };
 
-const initialValues: Values = {
-  firstName: "",
-  lastName: "",
-  email: "",
-  phoneNumber: "",
-  message: "",
-};
-
-const validationSchema = yup.object({
-  firstName: yup.string().required(),
-  lastName: yup.string().required(),
-  email: yup.string().email().required(),
-  phoneNumber: yup.string().required().length(11),
-  message: yup.string().required(),
-});
-
-const onSubmit = () => {
-  toast.success("Success Notification !");
-};
-
 const ContactForm = () => {
+  const initialValues: Values = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+  };
+
+  const validationSchema = yup.object({
+    firstName: yup.string().required(),
+    lastName: yup.string().required(),
+    email: yup.string().email().required(),
+    phoneNumber: yup.string().required().length(11),
+    message: yup.string().required(),
+  });
+
+  const onSubmit = () => {
+    toast.success("Success Notification !");
+  };
+
   return (
     <Formik
       initialValues={initialValues}
