@@ -1,9 +1,15 @@
 import * as yup from "yup";
-import { useFormik } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import { toast } from "react-toastify";
 import ButtonComp from "../../Components/Button/ButtonComp";
 
-const initialValues = {
+type Values = {
+  fullName: string;
+  email: string;
+  message: string;
+};
+
+const initialValues: Values = {
   fullName: "",
   email: "",
   message: "",
@@ -20,57 +26,75 @@ const onSubmit = () => {
 };
 
 const LeaveReply = () => {
-  const formik = useFormik({ initialValues, validationSchema, onSubmit });
-  const { errors, touched } = formik;
-
   return (
-    <form className="shadow-none" onSubmit={formik.handleSubmit} noValidate>
-      <h2 className="h1 mb-4">Leave A Reply</h2>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={onSubmit}
+    >
+      {({ errors, touched }) => (
+        <Form className="shadow-none" noValidate>
+          <h2 className="h1 mb-4">Leave A Reply</h2>
 
-      <div className="row g-4">
-        <div className="col-md-6">
-          <input
-            type="text"
-            className={`form-control py-2 px-3 shadow-none bg-light rounded-0 border-0 border-secondary border-bottom border-3 ${
-              errors.fullName && touched.fullName ? "is-invalid" : ""
-            }`}
-            placeholder="Full Name"
-            aria-label="Full Name"
-            {...formik.getFieldProps("fullName")}
-          />
-          <div className="invalid-feedback">{errors.fullName}</div>
-        </div>
+          <div className="row g-4">
+            <div className="col-md-6">
+              <Field
+                type="text"
+                name="fullName"
+                placeholder="Full Name"
+                aria-label="Full Name"
+                className={`form-control py-2 px-3 shadow-none bg-light rounded-0 border-0 border-secondary border-bottom border-3 ${
+                  errors.fullName && touched.fullName ? "is-invalid" : ""
+                }`}
+              />
+              <ErrorMessage
+                name="fullName"
+                component="div"
+                className="invalid-feedback"
+              />
+            </div>
 
-        <div className="col-md-6">
-          <input
-            type="email"
-            className={`form-control py-2 px-3 shadow-none bg-light rounded-0 border-0 border-secondary border-bottom border-3 ${
-              errors.email && touched.email ? "is-invalid" : ""
-            }`}
-            placeholder="Email Address"
-            aria-label="Email Address"
-            {...formik.getFieldProps("email")}
-          />
-          <div className="invalid-feedback">{errors.email}</div>
-        </div>
+            <div className="col-md-6">
+              <Field
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                aria-label="Email Address"
+                className={`form-control py-2 px-3 shadow-none bg-light rounded-0 border-0 border-secondary border-bottom border-3 ${
+                  errors.email && touched.email ? "is-invalid" : ""
+                }`}
+              />
+              <ErrorMessage
+                name="email"
+                component="div"
+                className="invalid-feedback"
+              />
+            </div>
 
-        <div className="col-12">
-          <textarea
-            className={`form-control py-2 px-3 shadow-none bg-light rounded-0 border-0 border-secondary border-bottom border-3 ${
-              errors.message && touched.message ? "is-invalid" : ""
-            }`}
-            placeholder="Message"
-            aria-label="Message"
-            {...formik.getFieldProps("message")}
-          />
-          <div className="invalid-feedback">{errors.message}</div>
-        </div>
-      </div>
+            <div className="col-12">
+              <Field
+                as="textarea"
+                name="message"
+                placeholder="Message"
+                aria-label="Message"
+                className={`form-control py-2 px-3 shadow-none bg-light rounded-0 border-0 border-secondary border-bottom border-3 ${
+                  errors.message && touched.message ? "is-invalid" : ""
+                }`}
+              />
+              <ErrorMessage
+                name="message"
+                component="div"
+                className="invalid-feedback"
+              />
+            </div>
+          </div>
 
-      <ButtonComp className="main-btn px-5 mt-4" type="submit">
-        Post Now
-      </ButtonComp>
-    </form>
+          <ButtonComp className="main-btn px-5 mt-4" type="submit">
+            Post Now
+          </ButtonComp>
+        </Form>
+      )}
+    </Formik>
   );
 };
 
