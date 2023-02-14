@@ -1,8 +1,7 @@
 import "./Footer.scss";
 
-import * as yup from "yup";
-import { toast } from "react-toastify";
 import { ErrorMessage, Field, Form, Formik } from "formik";
+import { SubscribeValidation } from "../../Validations/SubscribeValidation";
 
 import { Link } from "react-router-dom";
 import { MdPhone, MdEmail, MdLocationPin } from "react-icons/md";
@@ -14,35 +13,15 @@ import SocialMedia from "../../Components/SocialMedia/SocialMedia";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import ContainerFluid from "../../Components/ContainerFluid/ContainerFluid";
 
-type Values = {
-  email: string;
-};
-
 const Footer = () => {
-  const initialValues: Values = {
-    email: "",
-  };
-
-  const validationSchema = yup.object({
-    email: yup.string().email().required(),
-  });
-
-  const onSubmit = () => {
-    toast.success("Success Notification !");
-  };
-
   return (
     <footer className="bg-dark pt-5 text-white">
       <ContainerFluid>
         <Outline>
           <div className="container py-5">
             {/* start form */}
-            <Formik
-              initialValues={initialValues}
-              validationSchema={validationSchema}
-              onSubmit={onSubmit}
-            >
-              {({ errors, touched }) => (
+            <Formik {...SubscribeValidation}>
+              {({ errors, touched, isSubmitting }) => (
                 <Form className="text-center" noValidate>
                   <MainHeading className="dark-border">Newsletter</MainHeading>
                   <SectionHeading>Let's Stay In Touch</SectionHeading>
@@ -64,6 +43,7 @@ const Footer = () => {
                     />
                     <ButtonComp
                       type="submit"
+                      disabled={isSubmitting}
                       className="main-btn position-absolute top-50 translate-middle-y mx-2 mt-3 mt-xl-0"
                     >
                       Subscribe Now

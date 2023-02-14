@@ -1,38 +1,11 @@
-import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { toast } from "react-toastify";
+import { LeaveReplyValidation } from "../../Validations/LeaveReplyValidation";
 import ButtonComp from "../../Components/Button/ButtonComp";
 
-type Values = {
-  fullName: string;
-  email: string;
-  message: string;
-};
-
 const LeaveReply = () => {
-  const initialValues: Values = {
-    fullName: "",
-    email: "",
-    message: "",
-  };
-
-  const validationSchema = yup.object({
-    fullName: yup.string().required(),
-    email: yup.string().email().required(),
-    message: yup.string().required(),
-  });
-
-  const onSubmit = () => {
-    toast.success("Success Notification !");
-  };
-
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={onSubmit}
-    >
-      {({ errors, touched }) => (
+    <Formik {...LeaveReplyValidation}>
+      {({ errors, touched, isSubmitting }) => (
         <Form className="shadow-none" noValidate>
           <h2 className="h1 mb-4">Leave A Reply</h2>
 
@@ -89,7 +62,11 @@ const LeaveReply = () => {
             </div>
           </div>
 
-          <ButtonComp className="main-btn px-5 mt-4" type="submit">
+          <ButtonComp
+            className="main-btn px-5 mt-4"
+            type="submit"
+            disabled={isSubmitting}
+          >
             Post Now
           </ButtonComp>
         </Form>

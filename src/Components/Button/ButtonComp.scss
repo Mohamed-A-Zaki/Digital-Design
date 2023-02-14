@@ -39,4 +39,8 @@
       background-color: $yellow-color;
     }
   }
+
+  &:disabled {
+    background-color: #ccc !important;
+  }
 }

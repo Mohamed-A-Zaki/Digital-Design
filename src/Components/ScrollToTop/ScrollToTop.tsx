@@ -1,13 +1,18 @@
 import "./ScrollToTop.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
 
 const ScrollToTop = () => {
   const [show, setShow] = useState<boolean>(false);
 
-  window.addEventListener("scroll", () => {
+  const Listener = () => {
     setShow(window.scrollY >= 1000);
-  });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", Listener);
+    return () => window.removeEventListener("scroll", Listener);
+  }, []);
 
   return (
     <div

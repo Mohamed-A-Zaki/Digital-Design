@@ -1,47 +1,14 @@
-import * as yup from "yup";
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import { toast } from "react-toastify";
+import { ContactFormValidation } from "../../Validations/ContactFormValidation";
 
 import ButtonComp from "../Button/ButtonComp";
 import MainHeading from "../MainHeading/MainHeading";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
-type Values = {
-  firstName: string;
-  lastName: string;
-  email: string;
-  phoneNumber: string;
-  message: string;
-};
-
 const ContactForm = () => {
-  const initialValues: Values = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    message: "",
-  };
-
-  const validationSchema = yup.object({
-    firstName: yup.string().required(),
-    lastName: yup.string().required(),
-    email: yup.string().email().required(),
-    phoneNumber: yup.string().required().length(11),
-    message: yup.string().required(),
-  });
-
-  const onSubmit = () => {
-    toast.success("Success Notification !");
-  };
-
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={onSubmit}
-    >
-      {({ errors, touched }) => (
+    <Formik {...ContactFormValidation}>
+      {({ errors, touched, isSubmitting }) => (
         <Form className="p-5 rounded" noValidate>
           <MainHeading className="special">Contact Us</MainHeading>
           <SectionHeading>Contact Us For Any Information</SectionHeading>
@@ -102,11 +69,11 @@ const ContactForm = () => {
               <Field
                 type="tel"
                 name="phoneNumber"
+                placeholder="Phone Number"
+                aria-label="Phone Number"
                 className={`form-control py-2 px-3 shadow-none bg-light rounded-0 border-0 border-secondary border-bottom border-3 ${
                   errors.phoneNumber && touched.phoneNumber ? "is-invalid" : ""
                 }`}
-                placeholder="Phone Number"
-                aria-label="Phone Number"
               />
               <ErrorMessage
                 name="phoneNumber"
@@ -133,7 +100,11 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <ButtonComp className="main-btn px-5 mt-4" type="submit">
+          <ButtonComp
+            className="main-btn px-5 mt-4"
+            type="submit"
+            disabled={isSubmitting}
+          >
             Submit
           </ButtonComp>
         </Form>
