@@ -7,22 +7,22 @@ import { FaBars } from "react-icons/fa";
 import ButtonComp from "../../Components/Button/ButtonComp";
 
 const Navbar = () => {
-  const [navbar_theme, setNavbar_theme] = useState<"light" | "dark">("dark");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       window.scrollY >= 100
-        ? setNavbar_theme("light")
-        : setNavbar_theme("dark");
+        ? setTheme("light")
+        : setTheme("dark");
     });
   }, []);
 
   return (
     <nav
       className={`navbar ${
-        navbar_theme === "dark" ? "navbar-dark bg-dark" : "bg-white"
+        theme === "dark" ? "navbar-dark bg-dark" : "bg-white"
       } navbar-expand-lg py-3 sticky-top shadow`}
     >
       <div className="container-fluid px-md-4 px-lg-5">
@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* navbar-toggler button */}
         <button
           className={`navbar-toggler shadow-none ${
-            navbar_theme === "dark" ? "border-light" : "border-dark"
+            theme === "dark" ? "border-light" : "border-dark"
           }`}
           type="button"
           aria-label="navbar-toggler"
@@ -48,7 +48,7 @@ const Navbar = () => {
         >
           <FaBars
             className={`fs-3 ${
-              navbar_theme === "dark" ? "text-light" : "text-dark"
+              theme === "dark" ? "text-light" : "text-dark"
             } `}
           />
         </button>
@@ -56,7 +56,7 @@ const Navbar = () => {
         {/* start offcanvas */}
         <div
           className={`offcanvas offcanvas-end ${
-            navbar_theme === "dark" ? "text-bg-dark" : ""
+            theme === "dark" ? "text-bg-dark" : ""
           }`}
           tabIndex={-1}
           id="offcanvasNavbar"
@@ -70,7 +70,7 @@ const Navbar = () => {
             <button
               type="button"
               className={`btn-close shadow-none ${
-                navbar_theme === "dark" && "btn-close-white"
+                theme === "dark" && "btn-close-white"
               }`}
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -84,7 +84,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <NavLink
                   className={`nav-link fw-semibold px-0 ${
-                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                    theme === "dark" ? "text-white" : "text-dark"
                   }`}
                   aria-current="page"
                   to="/"
@@ -96,7 +96,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <NavLink
                   className={`nav-link fw-semibold px-0 ${
-                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                    theme === "dark" ? "text-white" : "text-dark"
                   }`}
                   aria-current="page"
                   to="about"
@@ -108,7 +108,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <NavLink
                   className={`nav-link fw-semibold px-0 ${
-                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                    theme === "dark" ? "text-white" : "text-dark"
                   }`}
                   aria-current="page"
                   to="services"
@@ -120,7 +120,7 @@ const Navbar = () => {
               <li className="nav-item dropdown">
                 <Link
                   className={`nav-link fw-semibold px-0 dropdown-toggle ${
-                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                    theme === "dark" ? "text-white" : "text-dark"
                   } ${
                     location.pathname === "/portfolio" ||
                     location.pathname === "/details" ||
@@ -177,7 +177,7 @@ const Navbar = () => {
               <li className="nav-item dropdown">
                 <Link
                   className={`nav-link fw-semibold px-0 dropdown-toggle ${
-                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                    theme === "dark" ? "text-white" : "text-dark"
                   } 
                   ${
                     location.pathname === "/blog-list" ||
@@ -215,7 +215,7 @@ const Navbar = () => {
               <li className="nav-item ">
                 <NavLink
                   className={`nav-link fw-semibold px-0 ${
-                    navbar_theme === "dark" ? "text-white" : "text-dark"
+                    theme === "dark" ? "text-white" : "text-dark"
                   }`}
                   aria-current="page"
                   to="contact"
@@ -228,7 +228,7 @@ const Navbar = () => {
             {/* button */}
             <ButtonComp
               className={`${
-                navbar_theme === "dark" ? "nav-btn" : "main-btn"
+                theme === "dark" ? "nav-btn" : "main-btn"
               } d-none d-lg-block`}
               onClick={() => navigate("/contact")}
             >
