@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import useScrollToTop from "../Hooks/useScrollToTop";
 
 import Brands from "../Sections/Brands/Brands";
 import Contact from "../Sections/Contact/Contact";
@@ -11,9 +12,7 @@ import Services from "../Sections/Services/Services";
 import img from "../images/services-banner.jpg";
 
 const ServicesPage = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
+  useScrollToTop();
 
   return (
     <React.Fragment>

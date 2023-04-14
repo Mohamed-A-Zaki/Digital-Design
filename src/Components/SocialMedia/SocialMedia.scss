@@ -1,8 +1,6 @@
 @use "../../sass/variables" as *;
-@use "../../sass/mixins" as *;
 
 .social svg {
-  @include square_ele(40px);
   background-color: $dark-color;
   transition: $main-transition;
   &:hover {

@@ -21,6 +21,9 @@
       background-color: $bootstrap-dark-color;
       color: #fff;
       transform: translateY(-15px);
+      li.text-muted {
+        color: rgba(#fff, 0.5) !important;
+      }
       .outline {
         border-color: $yellow-color;
       }

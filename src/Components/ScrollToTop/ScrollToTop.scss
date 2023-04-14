@@ -1,13 +1,9 @@
 @use "../../sass/variables" as *;
-@use "../../sass/mixins" as *;
 
 .scroll-to-top {
-  @include square_ele(40px);
-  @include center_flex();
-  font-size: 24px;
-  background-color: $yellow-color;
   z-index: 1000;
   inset-inline-end: -100px;
+  background-color: $yellow-color;
   transition: $main-transition * 2;
   cursor: pointer;
   &.active {

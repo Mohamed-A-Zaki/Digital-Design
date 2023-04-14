@@ -1,18 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
+import useScrollToTop from "../Hooks/useScrollToTop";
 
 import Brands from "../Sections/Brands/Brands";
-import Sidebar from "../Sections/Sidebar/Sidebar";
-import BlogItem from "../Components/BlogItem/BlogItem";
 import Breadcrumb from "../Sections/Breadcrumb/Breadcrumb";
-import Pagination from "../Components/Pagination/Pagination";
+import BlogLayout from "../Sections/BlogLayout/BlogLayout";
 
 import img from "../images/blog-bg.jpg";
-import data from "../json/data.json";
 
 const BlogListPage = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
+  useScrollToTop();
 
   return (
     <React.Fragment>
@@ -21,30 +17,7 @@ const BlogListPage = () => {
           Blog
         </li>
       </Breadcrumb>
-
-      <section className="our-blog py-5">
-        <div className="container py-5">
-          <div className="row g-5 g-lg-4">
-            <div className="col-lg-8">
-              <div className="row row-cols-1 row-cols-xl-2 g-4">
-                {data.blog.map((blog_item) => {
-                  return (
-                    <div className="col" key={blog_item.id}>
-                      <BlogItem {...blog_item}></BlogItem>
-                    </div>
-                  );
-                })}
-              </div>
-              <Pagination></Pagination>
-            </div>
-
-            <div className="col-lg-4">
-              <Sidebar></Sidebar>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <BlogLayout />
       <Brands />
     </React.Fragment>
   );

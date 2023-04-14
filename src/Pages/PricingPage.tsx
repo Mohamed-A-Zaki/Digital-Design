@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import useScrollToTop from "../Hooks/useScrollToTop";
 
 import Brands from "../Sections/Brands/Brands";
 import Pricing from "../Sections/Pricing/Pricing";
@@ -10,10 +11,8 @@ import Testimonial from "../Sections/Testimonial/Testimonial";
 import img from "../images/pricing-banner.jpg";
 
 const PricingPage = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
-  
+  useScrollToTop();
+
   return (
     <React.Fragment>
       <Breadcrumb img={img} title="Our Pricing">

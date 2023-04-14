@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import useScrollToTop from "../Hooks/useScrollToTop";
 
 import Brands from "../Sections/Brands/Brands";
 import Contact from "../Sections/Contact/Contact";
@@ -9,9 +10,7 @@ import PortfolioDetails from "../Sections/PortfolioDetails/PortfolioDetails";
 import img from "../images/portfolio-banner.jpg";
 
 const PortfolioDetailsPage = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
+  useScrollToTop();
 
   return (
     <React.Fragment>
@@ -25,9 +24,7 @@ const PortfolioDetailsPage = () => {
           Portfolio Detail
         </li>
       </Breadcrumb>
-
-      <PortfolioDetails></PortfolioDetails>
-
+      <PortfolioDetails />
       <Contact />
       <Brands />
     </React.Fragment>

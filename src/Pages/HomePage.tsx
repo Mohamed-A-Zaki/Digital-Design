@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import useScrollToTop from "../Hooks/useScrollToTop";
 
 import AboutUs from "../Sections/AboutUs/AboutUs";
 import GetTouch from "../Sections/GetTouch/GetTouch";
@@ -14,14 +16,10 @@ import Portfoilo from "../Sections/Portfoilo/Portfoilo";
 import Pricing from "../Sections/Pricing/Pricing";
 import ButtonComp from "../Components/Button/ButtonComp";
 
-import { useNavigate } from "react-router-dom";
-
 const HomePage = () => {
   let navigate = useNavigate();
 
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
+  useScrollToTop();
 
   return (
     <React.Fragment>

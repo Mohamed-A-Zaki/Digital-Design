@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import useScrollToTop from "../Hooks/useScrollToTop";
 
 import Brands from "../Sections/Brands/Brands";
 import Breadcrumb from "../Sections/Breadcrumb/Breadcrumb";
@@ -8,10 +9,8 @@ import Portfoilo from "../Sections/Portfoilo/Portfoilo";
 import img from "../images/portfolio-banner.jpg";
 
 const PortfolioPage = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
-  
+  useScrollToTop();
+
   return (
     <React.Fragment>
       <Breadcrumb img={img} title="Our Portfolio">

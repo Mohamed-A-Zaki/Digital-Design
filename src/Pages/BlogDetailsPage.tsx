@@ -1,20 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import useScrollToTop from "../Hooks/useScrollToTop";
 
 import Brands from "../Sections/Brands/Brands";
-import Sidebar from "../Sections/Sidebar/Sidebar";
-import Comments from "../Sections/Comments/Comments";
 import Breadcrumb from "../Sections/Breadcrumb/Breadcrumb";
-import LeaveReply from "../Sections/LeaveReply/LeaveReply";
-import BlogDetails from "../Sections/BlogDetails/BlogDetails";
-import RelatedBlogs from "../Sections/RelatedBlogs/RelatedBlogs";
+import BlogDetailsLayout from "../Sections/BlogDetailsLayout/BlogDetailsLayout";
 
 import img from "../images/blog-bg.jpg";
 
 const BlogDetailsPage = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
+  useScrollToTop();
 
   return (
     <React.Fragment>
@@ -28,23 +23,7 @@ const BlogDetailsPage = () => {
           Blog Detail
         </li>
       </Breadcrumb>
-
-      <section className="our-blog py-5">
-        <div className="container py-5">
-          <div className="row g-5 g-lg-4">
-            <div className="col-lg-8">
-              <BlogDetails></BlogDetails>
-              <RelatedBlogs></RelatedBlogs>
-              <Comments></Comments>
-              <LeaveReply></LeaveReply>
-            </div>
-            <div className="col-lg-4">
-              <Sidebar></Sidebar>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <BlogDetailsLayout />
       <Brands />
     </React.Fragment>
   );

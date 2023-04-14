@@ -12,6 +12,7 @@ const Contact = () => {
               <img src={contact_img} className="img-fluid" alt="contact_img" />
             </div>
           </div>
+
           <div className="col-lg-7">
             <ContactForm></ContactForm>
           </div>
