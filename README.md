@@ -7,6 +7,21 @@
     creative agency, portfolio, digital marketing, startups and related products / services.
     
     Build with React & Bootstrap framework and it is 100% responsive.
+    
+ # Topics
+      
+      [1] : React
+      
+      [2] : Typescript
+      
+      [3] : SASS
+      
+      [4] : Bootsrap
+      
+      [5] : Formik + Yup
+      
+      [6] : Lazy Load
+      
 
 # Features of Digital Design
 
